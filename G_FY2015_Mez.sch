@@ -644,8 +644,8 @@
 <wire x1="7.11" y1="0" x2="7.11" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="7.11" y1="-2.5" x2="-7.11" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-7.11" y1="-2.5" x2="-7.11" y2="0" width="0.127" layer="21"/>
-<text x="-6.35" y="3.81" size="1.27" layer="21">&gt;NAME</text>
-<text x="1.27" y="3.81" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-6.985" y="3.175" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3.81" y="-0.635" size="1.27" layer="21">&gt;VALUE</text>
 <wire x1="-7.11" y1="0" x2="-7.11" y2="2.5" width="0.127" layer="21"/>
 <wire x1="7.11" y1="0" x2="10.16" y2="0" width="0.127" layer="21"/>
 <wire x1="-7.11" y1="0" x2="-10.16" y2="0" width="0.127" layer="21"/>
@@ -1645,8 +1645,6 @@ SANYO-NPA</description>
 <rectangle x1="-4.6482" y1="-5.08" x2="-4.2418" y2="-3.7592" layer="51"/>
 </package>
 <package name="GPS_FGPMMOPA6H">
-<wire x1="-203.2" y1="203.2" x2="203.2" y2="203.2" width="0.127" layer="21"/>
-<wire x1="203.2" y1="203.2" x2="203.2" y2="-203.2" width="0.127" layer="21"/>
 <wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
@@ -1726,8 +1724,7 @@ SANYO-NPA</description>
 <package name="EPL.00.250.NTN">
 <description>&lt;b&gt;LEMO Connector&lt;/b&gt;&lt;p&gt;
 Source: http://intra.lemo.ch/catalog/ROW/UK_English/00and01Coaxial_en.pdf</description>
-<text x="-2.81" y="-5.77" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-2.81" y="4.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.445" y="3.865" size="1.27" layer="25">&gt;NAME</text>
 <wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
 <wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
@@ -1749,17 +1746,17 @@ Source: http://intra.lemo.ch/catalog/ROW/UK_English/00and01Coaxial_en.pdf</descr
 <pad name="P$4" x="2.032" y="-11.557" drill="1.5" diameter="2.54"/>
 <pad name="P$5" x="21.082" y="-11.557" drill="1.5" diameter="2.54"/>
 <pad name="P$6" x="21.082" y="-2.032" drill="1.5" diameter="2.54"/>
-<text x="0" y="1.27" size="1.778" layer="21">&gt;NAME</text>
-<text x="0" y="-16.51" size="1.778" layer="21">&gt;VALUE</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="21">1</text>
-<text x="-2.54" y="-12.7" size="1.778" layer="21">4</text>
-<text x="24.13" y="-12.7" size="1.778" layer="21">5</text>
-<text x="24.13" y="-2.54" size="1.778" layer="21">6</text>
+<text x="0" y="0" size="1.27" layer="21">&gt;NAME</text>
+<text x="3.81" y="-8.89" size="1.27" layer="21">&gt;VALUE</text>
+<text x="3.81" y="-2.54" size="1.27" layer="21">1</text>
+<text x="3.81" y="-12.7" size="1.27" layer="21">4</text>
+<text x="17.78" y="-12.7" size="1.27" layer="21">5</text>
+<text x="17.78" y="-2.54" size="1.27" layer="21">6</text>
 </package>
 <package name="IL-4P-S3EN2">
-<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.6764"/>
-<pad name="P$2" x="-1.27" y="0" drill="0.9" diameter="1.6764"/>
-<pad name="P$3" x="1.27" y="0" drill="0.9" diameter="1.6764"/>
+<pad name="P$1" x="-3.81" y="0" drill="1.2" diameter="1.9304"/>
+<pad name="P$2" x="-1.27" y="0" drill="1.2" diameter="1.9304"/>
+<pad name="P$3" x="1.27" y="0" drill="1.2" diameter="1.9304"/>
 <wire x1="-5.52" y1="3.25" x2="5.52" y2="3.25" width="0.127" layer="21"/>
 <wire x1="5.52" y1="3.25" x2="5.52" y2="2.5" width="0.127" layer="21"/>
 <wire x1="5.52" y1="2.5" x2="5.52" y2="-3.25" width="0.127" layer="21"/>
@@ -1767,10 +1764,10 @@ Source: http://intra.lemo.ch/catalog/ROW/UK_English/00and01Coaxial_en.pdf</descr
 <wire x1="-5.52" y1="-3.25" x2="-5.52" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-5.52" y1="2.5" x2="-5.52" y2="3.25" width="0.127" layer="21"/>
 <wire x1="-5.52" y1="2.5" x2="5.52" y2="2.5" width="0.127" layer="21"/>
-<text x="6.35" y="-3.175" size="1.27" layer="21">&gt;NAME</text>
+<text x="-5.715" y="-5.08" size="1.27" layer="21">&gt;NAME</text>
 <text x="-6.985" y="1.905" size="1.27" layer="21">1</text>
 <text x="6.35" y="1.905" size="1.27" layer="21">4</text>
-<pad name="P$4" x="3.81" y="0" drill="0.9" diameter="1.6764"/>
+<pad name="P$4" x="3.81" y="0" drill="1.2" diameter="1.9304"/>
 </package>
 <package name="PJ-102A">
 <wire x1="-4.6" y1="4.4" x2="4.4" y2="4.4" width="0.127" layer="21"/>
@@ -1865,6 +1862,30 @@ Source: http://intra.lemo.ch/catalog/ROW/UK_English/00and01Coaxial_en.pdf</descr
 <vertex x="-4.25" y="-3"/>
 </polygon>
 <text x="-6" y="-1" size="1.27" layer="21">1</text>
+</package>
+<package name="MDM_9_PCB">
+<pad name="5" x="-3.82" y="0.95" drill="0.8" diameter="1.4224"/>
+<pad name="4" x="-1.91" y="0.95" drill="0.8" diameter="1.4224"/>
+<pad name="3" x="0" y="0.95" drill="0.8" diameter="1.4224"/>
+<pad name="2" x="1.91" y="0.95" drill="0.8" diameter="1.4224"/>
+<pad name="1" x="3.82" y="0.95" drill="0.8" diameter="1.4224"/>
+<pad name="9" x="-2.86" y="-0.95" drill="0.8" diameter="1.4224"/>
+<pad name="8" x="-0.95" y="-0.95" drill="0.8" diameter="1.4224"/>
+<pad name="7" x="0.95" y="-0.95" drill="0.8" diameter="1.4224"/>
+<pad name="6" x="2.85" y="-0.95" drill="0.8" diameter="1.4224"/>
+<pad name="THREAD_1" x="-7.175" y="0" drill="2.2" diameter="3"/>
+<pad name="THREAD_2" x="7.175" y="0" drill="2.2" diameter="3"/>
+<wire x1="-10" y1="6.35" x2="10" y2="6.35" width="0.127" layer="21"/>
+<wire x1="10" y1="6.35" x2="10" y2="5.8" width="0.127" layer="21"/>
+<wire x1="10" y1="5.8" x2="10" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="10" y1="-3.8" x2="-10" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="-10" y1="-3.8" x2="-10" y2="5.8" width="0.127" layer="21"/>
+<wire x1="-10" y1="5.8" x2="-10" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-10" y1="5.8" x2="10" y2="5.8" width="0.127" layer="21"/>
+<text x="10.5" y="0.95" size="1.27" layer="21">1</text>
+<text x="-11.5" y="0.95" size="1.27" layer="21">5</text>
+<text x="10.5" y="-0.95" size="1.27" layer="21">6</text>
+<text x="-11.5" y="-0.95" size="1.27" layer="21">9</text>
 </package>
 </packages>
 <symbols>
@@ -2506,6 +2527,21 @@ GPIO pin headers (CN1/CN2) and power connector (CN6)</description>
 <pin name="G" x="-5.08" y="0" length="short" direction="pas"/>
 <pin name="S" x="2.54" y="5.08" length="short" direction="pas" rot="R270"/>
 <pin name="D" x="2.54" y="-5.08" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="SPACEWIRE_MDM">
+<pin name="DIN+" x="-5.08" y="17.78" visible="pin" length="middle" direction="in"/>
+<pin name="SIN+" x="-5.08" y="10.16" visible="pin" length="middle" direction="in"/>
+<pin name="GND" x="-5.08" y="2.54" visible="pin" length="middle" direction="in"/>
+<pin name="SOUT-" x="-5.08" y="-17.78" visible="pin" length="middle" direction="in"/>
+<pin name="DOUT-" x="-5.08" y="-10.16" visible="pin" length="middle" direction="in"/>
+<pin name="DIN-" x="-5.08" y="15.24" visible="pin" length="middle" direction="in"/>
+<pin name="SIN-" x="-5.08" y="7.62" visible="pin" length="middle" direction="in"/>
+<pin name="SOUT+" x="-5.08" y="-15.24" visible="pin" length="middle" direction="in"/>
+<pin name="DOUT+" x="-5.08" y="-7.62" visible="pin" length="middle" direction="in"/>
+<pin name="GND1" x="-5.08" y="0" visible="pin" length="middle" direction="in"/>
+<pin name="GND2" x="-5.08" y="-2.54" visible="pin" length="middle" direction="in"/>
+<text x="-5.08" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-22.86" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3649,6 +3685,33 @@ Data Sheet
 <connect gate="Q" pin="D" pad="2"/>
 <connect gate="Q" pin="G" pad="1"/>
 <connect gate="Q" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPACEWIRE_MDM" prefix="J">
+<description>&lt;b&gt;SpaceWire PCB receptacle (socket) using Glenair MDM9 Connector&lt;/b&gt;&lt;br&gt;
+&lt;a href="http://www.glenair.com/micro_d/pdf/c/gmr7590.pdf"&gt;http://www.glenair.com/micro_d/pdf/c/gmr7590.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SPACEWIRE_MDM" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="MDM9" package="MDM_9_PCB">
+<connects>
+<connect gate="G$1" pin="DIN+" pad="1"/>
+<connect gate="G$1" pin="DIN-" pad="6"/>
+<connect gate="G$1" pin="DOUT+" pad="9"/>
+<connect gate="G$1" pin="DOUT-" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="GND1" pad="THREAD_1"/>
+<connect gate="G$1" pin="GND2" pad="THREAD_2"/>
+<connect gate="G$1" pin="SIN+" pad="2"/>
+<connect gate="G$1" pin="SIN-" pad="7"/>
+<connect gate="G$1" pin="SOUT+" pad="8"/>
+<connect gate="G$1" pin="SOUT-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11730,9 +11793,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND54" library="Aardvark" deviceset="GND" device=""/>
 <part name="R302" library="Aardvark" deviceset="R2012" device="" value="100"/>
 <part name="R303" library="Aardvark" deviceset="R2012" device="" value="4.7k"/>
-<part name="U$23" library="Aardvark" deviceset="2SJ313" device=""/>
+<part name="U303" library="Aardvark" deviceset="2SJ313" device=""/>
 <part name="P+5" library="Aardvark" deviceset="+12V" device=""/>
 <part name="P+13" library="Aardvark" deviceset="+5V" device=""/>
+<part name="J2" library="Aardvark" deviceset="SPACEWIRE_MDM" device="MDM9"/>
+<part name="GND55" library="Aardvark" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12580,6 +12645,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="TP_PRE_IN2" gate="G$1" x="-246.38" y="43.18" rot="R180"/>
 <instance part="TP_PRE_IN3" gate="G$1" x="-246.38" y="-22.86" rot="R180"/>
 <instance part="TP104" gate="G$1" x="-55.88" y="86.36" rot="R90"/>
+<instance part="J2" gate="G$1" x="292.1" y="116.84"/>
+<instance part="GND55" gate="1" x="271.78" y="119.38" rot="R270"/>
 </instances>
 <busses>
 <bus name="ADC0_D[0..9]">
@@ -12980,6 +13047,15 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="81.28" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-20.32" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="GND46" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="GND2"/>
+<wire x1="287.02" y1="114.3" x2="284.48" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="GND"/>
+<wire x1="287.02" y1="119.38" x2="284.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="114.3" x2="284.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="GND55" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -14569,6 +14645,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="241.3" y1="144.78" x2="248.92" y2="144.78" width="0.1524" layer="91"/>
 <junction x="241.3" y="144.78"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="DIN-"/>
+<wire x1="287.02" y1="132.08" x2="284.48" y2="132.08" width="0.1524" layer="91"/>
+<label x="269.24" y="132.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPW_DIN_P" class="0">
 <segment>
@@ -14580,6 +14661,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="R195" gate="R" pin="1"/>
 <wire x1="241.3" y1="134.62" x2="248.92" y2="134.62" width="0.1524" layer="91"/>
 <junction x="241.3" y="134.62"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="DIN+"/>
+<wire x1="287.02" y1="134.62" x2="284.48" y2="134.62" width="0.1524" layer="91"/>
+<label x="269.24" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPW_SIN_N" class="0">
@@ -14593,6 +14679,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <junction x="241.3" y="129.54"/>
 <wire x1="241.3" y1="129.54" x2="248.92" y2="129.54" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="SIN-"/>
+<wire x1="287.02" y1="124.46" x2="284.48" y2="124.46" width="0.1524" layer="91"/>
+<label x="269.24" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPW_SIN_P" class="0">
 <segment>
@@ -14604,12 +14695,22 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="241.3" y1="119.38" x2="248.92" y2="119.38" width="0.1524" layer="91"/>
 <junction x="241.3" y="119.38"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="SIN+"/>
+<wire x1="287.02" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
+<label x="269.24" y="127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPW_DOUT_N" class="0">
 <segment>
 <pinref part="U190" gate="G$1" pin="DOUT1-"/>
 <wire x1="233.68" y1="109.22" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
 <label x="238.76" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="DOUT-"/>
+<wire x1="287.02" y1="106.68" x2="284.48" y2="106.68" width="0.1524" layer="91"/>
+<label x="266.7" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPW_DOUT_P" class="0">
@@ -14618,6 +14719,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="233.68" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
 <label x="238.76" y="106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="DOUT+"/>
+<wire x1="287.02" y1="109.22" x2="284.48" y2="109.22" width="0.1524" layer="91"/>
+<label x="266.7" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPW_SOUT_N" class="0">
 <segment>
@@ -14625,12 +14731,22 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="233.68" y1="104.14" x2="238.76" y2="104.14" width="0.1524" layer="91"/>
 <label x="238.76" y="104.14" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="SOUT-"/>
+<wire x1="287.02" y1="99.06" x2="284.48" y2="99.06" width="0.1524" layer="91"/>
+<label x="266.7" y="99.06" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPW_SOUT_P" class="0">
 <segment>
 <pinref part="U190" gate="G$1" pin="DOUT2+"/>
 <wire x1="233.68" y1="101.6" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
 <label x="238.76" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="SOUT+"/>
+<wire x1="287.02" y1="101.6" x2="284.48" y2="101.6" width="0.1524" layer="91"/>
+<label x="266.7" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$64" class="0">
@@ -14981,6 +15097,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-190.5" y1="53.34" x2="-190.5" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$93" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="GND1"/>
+<wire x1="287.02" y1="116.84" x2="284.48" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -15007,7 +15129,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="GND54" gate="1" x="88.9" y="-10.16"/>
 <instance part="R302" gate="R" x="73.66" y="5.08" rot="R180"/>
 <instance part="R303" gate="R" x="81.28" y="0" rot="R270"/>
-<instance part="U$23" gate="Q" x="109.22" y="20.32"/>
+<instance part="U303" gate="Q" x="109.22" y="20.32"/>
 <instance part="P+5" gate="1" x="111.76" y="33.02"/>
 </instances>
 <busses>
@@ -15148,7 +15270,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <label x="60.96" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$23" gate="Q" pin="D"/>
+<pinref part="U303" gate="Q" pin="D"/>
 <wire x1="111.76" y1="15.24" x2="111.76" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="5.08" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
 <label x="121.92" y="5.08" size="1.778" layer="95"/>
@@ -15160,7 +15282,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="R301" gate="R" pin="2"/>
 <wire x1="88.9" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
 <junction x="88.9" y="20.32"/>
-<pinref part="U$23" gate="Q" pin="G"/>
+<pinref part="U303" gate="Q" pin="G"/>
 </segment>
 </net>
 <net name="N$86" class="0">
@@ -15175,7 +15297,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="P+4" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="U$23" gate="Q" pin="S"/>
+<pinref part="U303" gate="Q" pin="S"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 <wire x1="111.76" y1="30.48" x2="111.76" y2="25.4" width="0.1524" layer="91"/>
 </segment>
