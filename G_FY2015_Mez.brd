@@ -9,10 +9,10 @@
 <grid distance="0.024" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -147,9 +147,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="160" y2="0" width="0.2" layer="20"/>
+<wire x1="160" y1="0" x2="160" y2="100" width="0.2" layer="20"/>
+<wire x1="160" y1="100" x2="0" y2="100" width="0.2" layer="20"/>
 <hole x="5.08" y="5.08" drill="3.2"/>
 <hole x="5.08" y="94.92" drill="3.2"/>
 <hole x="154.92" y="5.08" drill="3.2"/>
@@ -182,7 +182,7 @@
 <text x="121" y="80" size="1.4224" layer="21" align="center">GROWTH-FW2015
 Electronics Board
 Version 20150518</text>
-<wire x1="0" y1="0" x2="0" y2="100" width="0.127" layer="20"/>
+<wire x1="0" y1="0" x2="0" y2="100" width="0.2" layer="20"/>
 </plain>
 <libraries>
 <library name="Aardvark">
@@ -3819,7 +3819,7 @@ grid 2.54 mm, diameter 5 mm</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="pban_5mil-l2">
+<designrules name="pban_5mil-l4">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -3834,9 +3834,9 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.53mm 1.5mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="layerSetup" value="(1+2*15+16)"/>
+<param name="mtCopper" value="0.018mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.018mm"/>
+<param name="mtIsolate" value="0.25mm 1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.25mm"/>
 <param name="mdWireWire" value="5mil"/>
 <param name="mdWirePad" value="0.229mm"/>
 <param name="mdWireVia" value="0.229mm"/>
@@ -5342,6 +5342,18 @@ design rules under a new name.</description>
 <via x="93.7" y="46.7" extent="1-16" drill="0.3"/>
 <via x="109.2" y="16.2" extent="1-16" drill="0.3"/>
 <via x="28.5" y="91" extent="1-16" drill="0.3"/>
+<polygon width="0.127" layer="1" isolate="0.254">
+<vertex x="-5" y="-5"/>
+<vertex x="165" y="-5"/>
+<vertex x="165" y="105"/>
+<vertex x="-5" y="105"/>
+</polygon>
+<polygon width="0.4064" layer="16" isolate="0.254">
+<vertex x="-5" y="-5"/>
+<vertex x="165" y="-5"/>
+<vertex x="165" y="105"/>
+<vertex x="-5" y="105"/>
+</polygon>
 </signal>
 <signal name="AGND">
 <contactref element="VR100" pad="1"/>
