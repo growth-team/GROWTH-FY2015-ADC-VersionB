@@ -147,7 +147,7 @@ UsedLibrary="/Applications/EAGLE-6.2.0/lbr/transistorToragi.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="765 77 2201 1122"
+Loc="166 44 1602 1048"
 State=2
 Number=0
 
