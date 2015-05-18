@@ -595,10 +595,10 @@
 <rectangle x1="60.716" y1="-3.954" x2="61.224" y2="-3.446" layer="51"/>
 <rectangle x1="60.716" y1="-6.494" x2="61.224" y2="-5.986" layer="51"/>
 <wire x1="36.84" y1="-6.875" x2="36.84" y2="-8.145" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="72" y2="0" width="0.127" layer="20"/>
-<wire x1="0" y1="-50" x2="72" y2="-50" width="0.127" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="-50" width="0.127" layer="20"/>
-<wire x1="72" y1="0" x2="72" y2="-50" width="0.127" layer="20"/>
+<wire x1="0" y1="0" x2="72" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="-50" x2="72" y2="-50" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-50" width="0.127" layer="21"/>
+<wire x1="72" y1="0" x2="72" y2="-50" width="0.127" layer="21"/>
 <hole x="4" y="-3.5" drill="3.1"/>
 <hole x="4" y="-46.5" drill="3.1"/>
 <hole x="68" y="-46.5" drill="3.1"/>
@@ -1887,6 +1887,15 @@ Source: http://intra.lemo.ch/catalog/ROW/UK_English/00and01Coaxial_en.pdf</descr
 <text x="10.5" y="-0.95" size="1.27" layer="21">6</text>
 <text x="-11.5" y="-0.95" size="1.27" layer="21">9</text>
 </package>
+<package name="P1-13">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
+<pad name="TP" x="0" y="0" drill="1.3208" diameter="2.159" shape="octagon"/>
+<text x="-1.016" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+<rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TOKUDEN_SP6">
@@ -2488,7 +2497,7 @@ GPIO pin headers (CN1/CN2) and power connector (CN6)</description>
 </symbol>
 <symbol name="LTC1983-3">
 <pin name="VCC" x="-15.24" y="5.08" visible="pin" length="middle" direction="pwr"/>
-<pin name="VOUT" x="-15.24" y="0" visible="pin" length="middle" direction="out"/>
+<pin name="VOUT" x="-15.24" y="0" visible="pin" length="middle" direction="pwr"/>
 <pin name="C+" x="-15.24" y="-5.08" visible="pin" length="middle"/>
 <pin name="C-" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="GND" x="12.7" y="0" visible="pin" length="middle" direction="pwr" rot="R180"/>
@@ -2531,15 +2540,15 @@ GPIO pin headers (CN1/CN2) and power connector (CN6)</description>
 <symbol name="SPACEWIRE_MDM">
 <pin name="DIN+" x="-5.08" y="17.78" visible="pin" length="middle" direction="in"/>
 <pin name="SIN+" x="-5.08" y="10.16" visible="pin" length="middle" direction="in"/>
-<pin name="GND" x="-5.08" y="2.54" visible="pin" length="middle" direction="in"/>
-<pin name="SOUT-" x="-5.08" y="-17.78" visible="pin" length="middle" direction="in"/>
-<pin name="DOUT-" x="-5.08" y="-10.16" visible="pin" length="middle" direction="in"/>
+<pin name="GND" x="-5.08" y="2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="SOUT-" x="-5.08" y="-17.78" visible="pin" length="middle" direction="out"/>
+<pin name="DOUT-" x="-5.08" y="-10.16" visible="pin" length="middle" direction="out"/>
 <pin name="DIN-" x="-5.08" y="15.24" visible="pin" length="middle" direction="in"/>
 <pin name="SIN-" x="-5.08" y="7.62" visible="pin" length="middle" direction="in"/>
-<pin name="SOUT+" x="-5.08" y="-15.24" visible="pin" length="middle" direction="in"/>
-<pin name="DOUT+" x="-5.08" y="-7.62" visible="pin" length="middle" direction="in"/>
-<pin name="GND1" x="-5.08" y="0" visible="pin" length="middle" direction="in"/>
-<pin name="GND2" x="-5.08" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="SOUT+" x="-5.08" y="-15.24" visible="pin" length="middle" direction="out"/>
+<pin name="DOUT+" x="-5.08" y="-7.62" visible="pin" length="middle" direction="out"/>
+<pin name="GND1" x="-5.08" y="0" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND2" x="-5.08" y="-2.54" visible="pin" length="middle" direction="pwr"/>
 <text x="-5.08" y="20.32" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-22.86" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
@@ -2861,6 +2870,16 @@ Datasheet: &lt;a href="http://docs-asia.electrocomponents.com/webdocs/0713/09007
 <gate name="G$1" symbol="TP" x="0" y="0"/>
 </gates>
 <devices>
+<device name="PAD1-13" package="P1-13">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TP_SIGNAL_NAME" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
 <device name="PAD1-17" package="P1-17">
 <connects>
 <connect gate="G$1" pin="TP" pad="TP"/>
@@ -3871,6 +3890,114 @@ Data Sheet
 <rectangle x1="0.889" y1="-4.699" x2="1.651" y2="-2.921" layer="51"/>
 <rectangle x1="0.889" y1="-5.461" x2="1.651" y2="-4.699" layer="21"/>
 </package>
+<package name="1X06">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-6.35" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-7.6962" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-7.62" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+</package>
+<package name="1X06/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-7.62" y1="-1.905" x2="-5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="6.985" x2="-6.35" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="6.985" x2="-3.81" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="6.985" x2="3.81" y2="1.27" width="0.762" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="7.62" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="-1.905" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="6.985" x2="6.35" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-6.35" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-3.81" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="6" x="6.35" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-8.255" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="9.525" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-6.731" y1="0.635" x2="-5.969" y2="1.143" layer="21"/>
+<rectangle x1="-4.191" y1="0.635" x2="-3.429" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="3.429" y1="0.635" x2="4.191" y2="1.143" layer="21"/>
+<rectangle x1="5.969" y1="0.635" x2="6.731" y2="1.143" layer="21"/>
+<rectangle x1="-6.731" y1="-2.921" x2="-5.969" y2="-1.905" layer="21"/>
+<rectangle x1="-4.191" y1="-2.921" x2="-3.429" y2="-1.905" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+<rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="21"/>
+<rectangle x1="5.969" y1="-2.921" x2="6.731" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PINHD5">
@@ -3897,6 +4024,20 @@ Data Sheet
 <pin name="2" x="2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="2.54" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="PINHD6">
+<wire x1="-6.35" y1="-7.62" x2="1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="1.27" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="10.16" x2="-6.35" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="10.16" x2="-6.35" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-6.35" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="7.62" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="5" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="6" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3955,6 +4096,40 @@ Data Sheet
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-1X6" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="PINHD6" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="1X06">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X06/90">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11492,7 +11667,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND8" library="Aardvark" deviceset="GNDA" device=""/>
 <part name="GND9" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND10" library="Aardvark" deviceset="GNDA" device=""/>
-<part name="TP103" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP103" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="+3V1" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="C1" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="C2" library="Aardvark" deviceset="C226-3216" device="" value="10u"/>
@@ -11503,7 +11678,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND12" library="Aardvark" deviceset="GNDA" device=""/>
 <part name="GND13" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND14" library="Aardvark" deviceset="GNDA" device=""/>
-<part name="TP113" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP113" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="+3V2" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="C5" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="C6" library="Aardvark" deviceset="C226-3216" device="" value="10u"/>
@@ -11514,7 +11689,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND16" library="Aardvark" deviceset="GNDA" device=""/>
 <part name="GND17" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND18" library="Aardvark" deviceset="GNDA" device=""/>
-<part name="TP123" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP123" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="+3V3" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="C9" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="C10" library="Aardvark" deviceset="C226-3216" device="" value="10u"/>
@@ -11525,7 +11700,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND20" library="Aardvark" deviceset="GNDA" device=""/>
 <part name="GND21" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND22" library="Aardvark" deviceset="GNDA" device=""/>
-<part name="TP133" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP133" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="+3V4" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="C13" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="C14" library="Aardvark" deviceset="C226-3216" device="" value="10u"/>
@@ -11536,11 +11711,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="P+9" library="Aardvark" deviceset="+5V" device=""/>
 <part name="GND24" library="Aardvark" deviceset="GND" device=""/>
 <part name="JP100" library="pinhead" deviceset="PINHD-1X5" device=""/>
-<part name="J181" library="Aardvark" deviceset="MINI-USB-RCPT-B-5PS-R/A-SMD(ST-USB-002A)" device=""/>
+<part name="J181" library="Aardvark" deviceset="MINI-USB-RCPT-B-5PS-R/A-SMD(ST-USB-002A)" device="" value="USB Mini-B Connector"/>
 <part name="GND25" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND26" library="Aardvark" deviceset="GND" device=""/>
 <part name="+3V5" library="Aardvark" deviceset="+3V3" device=""/>
-<part name="TP5" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP5" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="GND27" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND28" library="Aardvark" deviceset="GND" device=""/>
 <part name="U$1" library="Aardvark" deviceset="NC" device=""/>
@@ -11560,8 +11735,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="U$5" library="Aardvark" deviceset="-3V3" device=""/>
 <part name="+3V7" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="GND1" library="Aardvark" deviceset="GNDA" device=""/>
-<part name="R190" library="Aardvark" deviceset="R2012" device=""/>
-<part name="R191" library="Aardvark" deviceset="R2012" device=""/>
+<part name="R190" library="Aardvark" deviceset="R2012" device="" value="1k"/>
+<part name="R191" library="Aardvark" deviceset="R2012" device="" value="1k"/>
 <part name="U111" library="Aardvark" deviceset="AD8138" device=""/>
 <part name="R111" library="Aardvark" deviceset="R2012" device="" value="499"/>
 <part name="R110" library="Aardvark" deviceset="R2012" device="" value="49.9"/>
@@ -11622,7 +11797,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C17" library="Aardvark" deviceset="C226-3216" device="" value="10u"/>
 <part name="AGND11" library="Aardvark" deviceset="AGND" device=""/>
 <part name="U7" library="Aardvark" deviceset="LM60" device=""/>
-<part name="TP_2V5" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP_2V5" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="TP_SPI" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="AGND12" library="Aardvark" deviceset="AGND" device=""/>
 <part name="+3V12" library="Aardvark" deviceset="+3V3" device=""/>
@@ -11644,13 +11819,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X2" device=""/>
 <part name="GND40" library="Aardvark" deviceset="GND" device=""/>
 <part name="SJ1" library="Aardvark" deviceset="SJ2W" device="W"/>
-<part name="U190" library="Aardvark" deviceset="SN65LVDS049" device=""/>
+<part name="U190" library="Aardvark" deviceset="SN65LVDS049" device="" value="SN65LVDS049"/>
 <part name="GND41" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND42" library="Aardvark" deviceset="GND" device=""/>
 <part name="+3V16" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="+3V18" library="Aardvark" deviceset="+3V3" device=""/>
-<part name="R195" library="Aardvark" deviceset="R2012" device=""/>
-<part name="R196" library="Aardvark" deviceset="R2012" device=""/>
+<part name="R195" library="Aardvark" deviceset="R2012" device="" value="100"/>
+<part name="R196" library="Aardvark" deviceset="R2012" device="" value="100"/>
 <part name="U191" library="Aardvark" deviceset="GPS_FGPMMOPA6H" device=""/>
 <part name="U$18" library="Aardvark" deviceset="NC" device=""/>
 <part name="U$20" library="Aardvark" deviceset="NC" device=""/>
@@ -11659,13 +11834,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="+3V20" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="R197" library="Aardvark" deviceset="R2012" device="" value="330"/>
 <part name="R198" library="Aardvark" deviceset="R2012" device="" value="330"/>
-<part name="TP101" library="Aardvark" deviceset="TP" device="PAD1-17"/>
-<part name="TP102" library="Aardvark" deviceset="TP" device="PAD1-17"/>
-<part name="TP100" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP101" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="TP102" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="TP100" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="R199" library="Aardvark" deviceset="R2012" device="" value="330"/>
 <part name="U192" library="Aardvark" deviceset="LED-5" device=""/>
 <part name="GND45" library="Aardvark" deviceset="GND" device=""/>
-<part name="TP_1PPS" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP_1PPS" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="C194" library="Aardvark" deviceset="C226-3216" device="" value="0.01u"/>
 <part name="C195" library="Aardvark" deviceset="C226-3216" device="" value="10u"/>
 <part name="C193" library="Aardvark" deviceset="C226-3216" device="" value="4.7u"/>
@@ -11673,32 +11848,32 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C191" library="Aardvark" deviceset="C226-3216" device="" value="4.7u"/>
 <part name="C190" library="Aardvark" deviceset="C226-3216" device="" value="100n"/>
 <part name="GND46" library="Aardvark" deviceset="GND" device=""/>
-<part name="U102" library="Aardvark" deviceset="LM6172" device="SOIC(D)8"/>
+<part name="U102" library="Aardvark" deviceset="LM6172" device="SOIC(D)8" value="LM6142"/>
 <part name="C100" library="Aardvark" deviceset="C226-3216" device="" value="100p"/>
 <part name="C101" library="Aardvark" deviceset="C226-3216" device="" value="???"/>
 <part name="R107" library="Aardvark" deviceset="R2012" device="" value="1M"/>
 <part name="R108" library="Aardvark" deviceset="R2012" device="" value="???"/>
 <part name="AGND18" library="Aardvark" deviceset="AGND" device=""/>
-<part name="VR100" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device=""/>
+<part name="VR100" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device="" value="1k"/>
 <part name="AGND19" library="Aardvark" deviceset="AGND" device=""/>
 <part name="+3V19" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="U$13" library="Aardvark" deviceset="-3V3" device=""/>
-<part name="VR300" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device=""/>
-<part name="VR301" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device=""/>
+<part name="VR300" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device="" value="5k"/>
+<part name="VR301" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device="" value="5k"/>
 <part name="C103" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="C102" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="AGND17" library="Aardvark" deviceset="AGND" device=""/>
 <part name="AGND20" library="Aardvark" deviceset="AGND" device=""/>
-<part name="P_OUT0" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="P_OUT0" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="J100" library="Aardvark" deviceset="EPL.00.250.NTN" device=""/>
 <part name="AGND21" library="Aardvark" deviceset="AGND" device=""/>
-<part name="U112" library="Aardvark" deviceset="LM6172" device="SOIC(D)8"/>
+<part name="U112" library="Aardvark" deviceset="LM6172" device="SOIC(D)8" value="LM6142"/>
 <part name="C110" library="Aardvark" deviceset="C226-3216" device="" value="100p"/>
 <part name="C111" library="Aardvark" deviceset="C226-3216" device="" value="???"/>
 <part name="R117" library="Aardvark" deviceset="R2012" device="" value="1M"/>
 <part name="R118" library="Aardvark" deviceset="R2012" device="" value="???"/>
 <part name="AGND22" library="Aardvark" deviceset="AGND" device=""/>
-<part name="VR110" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device=""/>
+<part name="VR110" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device="" value="1k"/>
 <part name="AGND23" library="Aardvark" deviceset="AGND" device=""/>
 <part name="+3V21" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="U$14" library="Aardvark" deviceset="-3V3" device=""/>
@@ -11706,16 +11881,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C112" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="AGND24" library="Aardvark" deviceset="AGND" device=""/>
 <part name="AGND25" library="Aardvark" deviceset="AGND" device=""/>
-<part name="P_OUT1" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="P_OUT1" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="J101" library="Aardvark" deviceset="EPL.00.250.NTN" device=""/>
 <part name="AGND26" library="Aardvark" deviceset="AGND" device=""/>
-<part name="U122" library="Aardvark" deviceset="LM6172" device="SOIC(D)8"/>
+<part name="U122" library="Aardvark" deviceset="LM6172" device="SOIC(D)8" value="LM6142"/>
 <part name="C120" library="Aardvark" deviceset="C226-3216" device="" value="100p"/>
 <part name="C121" library="Aardvark" deviceset="C226-3216" device="" value="???"/>
 <part name="R127" library="Aardvark" deviceset="R2012" device="" value="1M"/>
 <part name="R128" library="Aardvark" deviceset="R2012" device="" value="???"/>
 <part name="AGND27" library="Aardvark" deviceset="AGND" device=""/>
-<part name="VR120" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device=""/>
+<part name="VR120" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device="" value="1k"/>
 <part name="AGND28" library="Aardvark" deviceset="AGND" device=""/>
 <part name="+3V22" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="U$15" library="Aardvark" deviceset="-3V3" device=""/>
@@ -11723,16 +11898,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C122" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="AGND29" library="Aardvark" deviceset="AGND" device=""/>
 <part name="AGND30" library="Aardvark" deviceset="AGND" device=""/>
-<part name="P_OUT2" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="P_OUT2" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="J102" library="Aardvark" deviceset="EPL.00.250.NTN" device=""/>
 <part name="AGND31" library="Aardvark" deviceset="AGND" device=""/>
-<part name="U132" library="Aardvark" deviceset="LM6172" device="SOIC(D)8"/>
+<part name="U132" library="Aardvark" deviceset="LM6172" device="SOIC(D)8" value="LM6142"/>
 <part name="C130" library="Aardvark" deviceset="C226-3216" device="" value="100p"/>
 <part name="C131" library="Aardvark" deviceset="C226-3216" device="" value="???"/>
 <part name="R137" library="Aardvark" deviceset="R2012" device="" value="1M"/>
 <part name="R138" library="Aardvark" deviceset="R2012" device="" value="???"/>
 <part name="AGND32" library="Aardvark" deviceset="AGND" device=""/>
-<part name="VR130" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device=""/>
+<part name="VR130" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device="" value="1k"/>
 <part name="AGND33" library="Aardvark" deviceset="AGND" device=""/>
 <part name="+3V23" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="U$16" library="Aardvark" deviceset="-3V3" device=""/>
@@ -11740,13 +11915,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C132" library="Aardvark" deviceset="C226-3216" device="" value="0.1u"/>
 <part name="AGND34" library="Aardvark" deviceset="AGND" device=""/>
 <part name="AGND35" library="Aardvark" deviceset="AGND" device=""/>
-<part name="P_OUT3" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="P_OUT3" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="J103" library="Aardvark" deviceset="EPL.00.250.NTN" device=""/>
 <part name="AGND36" library="Aardvark" deviceset="AGND" device=""/>
-<part name="P_IN3" library="Aardvark" deviceset="TP" device="PAD1-17"/>
-<part name="P_IN0" library="Aardvark" deviceset="TP" device="PAD1-17"/>
-<part name="P_IN1" library="Aardvark" deviceset="TP" device="PAD1-17"/>
-<part name="P_IN2" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="P_IN3" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="P_IN0" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="P_IN1" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="P_IN2" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-2X2" device=""/>
 <part name="R510" library="Aardvark" deviceset="R_LVR03" device="" value="0.1"/>
 <part name="GND43" library="Aardvark" deviceset="GND" device=""/>
@@ -11771,7 +11946,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C610" library="rcl" deviceset="CPOL-US" device="E2.5-5" value="100u"/>
 <part name="C601" library="Aardvark" deviceset="C226-3216" device="" value="10u"/>
 <part name="C611" library="Aardvark" deviceset="C226-3216" device="" value="10u"/>
-<part name="TP104" library="Aardvark" deviceset="TP" device="PAD1-17"/>
+<part name="TP104" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="J600_12V" library="Aardvark" deviceset="IL-4P-S3EN2" device=""/>
 <part name="P+10" library="Aardvark" deviceset="+12V" device=""/>
 <part name="GND50" library="Aardvark" deviceset="GND" device=""/>
@@ -11798,6 +11973,18 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="P+13" library="Aardvark" deviceset="+5V" device=""/>
 <part name="J2" library="Aardvark" deviceset="SPACEWIRE_MDM" device="MDM9"/>
 <part name="GND55" library="Aardvark" deviceset="GND" device=""/>
+<part name="GND56" library="Aardvark" deviceset="GND" device=""/>
+<part name="AGND37" library="Aardvark" deviceset="AGND" device=""/>
+<part name="GND57" library="Aardvark" deviceset="GNDA" device=""/>
+<part name="TP_GND" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="TP_GND1" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="TP_GND2" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="U$23" library="Aardvark" deviceset="NC" device=""/>
+<part name="U$24" library="Aardvark" deviceset="NC" device=""/>
+<part name="U$25" library="Aardvark" deviceset="NC" device=""/>
+<part name="U$26" library="Aardvark" deviceset="NC" device=""/>
+<part name="JP101" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="GND58" library="Aardvark" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12338,7 +12525,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <sheet>
 <description>Amp/ADC/FPGA</description>
 <plain>
-<text x="170.18" y="-10.16" size="1.778" layer="91">TODO: Flow control signal between FPGA and FT232</text>
 <text x="-124.46" y="190.5" size="1.778" layer="91">ADC Common Mode Voltage</text>
 <text x="-88.9" y="180.34" size="1.778" layer="94">ADC Common ModeをSolderJumperで選択すること。</text>
 <text x="172.72" y="81.28" size="1.778" layer="91">GPS Module</text>
@@ -12446,7 +12632,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="IC100" gate="1" x="114.3" y="-38.1"/>
 <instance part="P+9" gate="1" x="83.82" y="127" rot="R90"/>
 <instance part="GND24" gate="1" x="142.24" y="127" rot="R90"/>
-<instance part="JP100" gate="A" x="144.78" y="-43.18"/>
+<instance part="JP100" gate="A" x="157.48" y="-43.18"/>
 <instance part="J181" gate="G$1" x="114.3" y="-86.36"/>
 <instance part="GND25" gate="1" x="130.81" y="-93.98"/>
 <instance part="GND26" gate="1" x="100.33" y="-93.98"/>
@@ -12647,6 +12833,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="TP104" gate="G$1" x="-55.88" y="86.36" rot="R90"/>
 <instance part="J2" gate="G$1" x="292.1" y="116.84"/>
 <instance part="GND55" gate="1" x="271.78" y="119.38" rot="R270"/>
+<instance part="U$23" gate="G$1" x="142.24" y="-30.48" rot="R270"/>
+<instance part="U$24" gate="G$1" x="142.24" y="-27.94" rot="R270"/>
+<instance part="U$25" gate="G$1" x="142.24" y="-25.4" rot="R270"/>
+<instance part="U$26" gate="G$1" x="142.24" y="-33.02" rot="R270"/>
+<instance part="JP101" gate="A" x="215.9" y="5.08"/>
+<instance part="GND58" gate="1" x="203.2" y="-5.08"/>
 </instances>
 <busses>
 <bus name="ADC0_D[0..9]">
@@ -12843,6 +13035,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-50.8" y1="111.76" x2="-55.88" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="111.76" x2="-55.88" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GNDA"/>
+<junction x="-50.8" y="111.76"/>
 </segment>
 <segment>
 <pinref part="U110" gate="G$1" pin="AGND@1"/>
@@ -12867,6 +13060,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-50.8" y1="53.34" x2="-55.88" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="53.34" x2="-55.88" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GNDA"/>
+<junction x="-50.8" y="53.34"/>
 </segment>
 <segment>
 <pinref part="U120" gate="G$1" pin="AGND@1"/>
@@ -12891,6 +13085,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-50.8" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-12.7" x2="-55.88" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GNDA"/>
+<junction x="-50.8" y="-12.7"/>
 </segment>
 <segment>
 <pinref part="U130" gate="G$1" pin="AGND@1"/>
@@ -12915,6 +13110,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-50.8" y1="-71.12" x2="-55.88" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-71.12" x2="-55.88" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GNDA"/>
+<junction x="-50.8" y="-71.12"/>
 </segment>
 <segment>
 <pinref part="R191" gate="R" pin="2"/>
@@ -13043,19 +13239,49 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <segment>
 <pinref part="C191" gate="C" pin="2"/>
 <pinref part="C190" gate="C" pin="2"/>
-<wire x1="76.2" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-20.32" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="GND46" gate="1" pin="GND"/>
+<junction x="78.74" y="-20.32"/>
+<junction x="81.28" y="-20.32"/>
+<junction x="76.2" y="-20.32"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GND2"/>
 <wire x1="287.02" y1="114.3" x2="284.48" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="GND"/>
 <wire x1="287.02" y1="119.38" x2="284.48" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="114.3" x2="284.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="114.3" x2="284.48" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="116.84" x2="284.48" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="GND55" gate="1" pin="GND"/>
+<junction x="284.48" y="119.38"/>
+<pinref part="J2" gate="G$1" pin="GND1"/>
+<wire x1="287.02" y1="116.84" x2="284.48" y2="116.84" width="0.1524" layer="91"/>
+<junction x="284.48" y="116.84"/>
+</segment>
+<segment>
+<pinref part="J181" gate="G$1" pin="GND@1"/>
+<wire x1="101.6" y1="-82.55" x2="101.6" y2="-85.09" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-85.09" x2="101.6" y2="-87.63" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-87.63" x2="101.6" y2="-90.17" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-90.17" x2="101.6" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-91.44" x2="100.33" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="J181" gate="G$1" pin="GND@2"/>
+<junction x="101.6" y="-85.09"/>
+<pinref part="J181" gate="G$1" pin="GND@3"/>
+<junction x="101.6" y="-87.63"/>
+<pinref part="J181" gate="G$1" pin="GND@4"/>
+<junction x="101.6" y="-90.17"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP101" gate="A" pin="6"/>
+<wire x1="213.36" y1="0" x2="203.2" y2="0" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="0" x2="203.2" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="GND58" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -13632,6 +13858,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="27.94" y1="-20.32" x2="30.48" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<wire x1="142.24" y1="15.1892" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J180" gate="G$1" pin="A_15"/>
 <wire x1="137.16" y1="15.24" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13805,18 +14035,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="91.44" y1="10.16" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BBB" class="0">
-<segment>
-<pinref part="J180" gate="G$1" pin="A_2"/>
-<wire x1="91.44" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
-<label x="73.66" y="30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$24" class="0">
+<net name="TRIG_OUT0" class="0">
 <segment>
 <pinref part="J180" gate="G$1" pin="A_4"/>
 <wire x1="91.44" y1="27.94" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
-<label x="73.66" y="27.94" size="1.778" layer="95"/>
+<label x="71.12" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="213.36" y1="12.7" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
+<label x="187.96" y="12.7" size="1.778" layer="95"/>
+<pinref part="JP101" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="GPS_1PPS" class="0">
@@ -13834,25 +14062,28 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <junction x="228.6" y="66.04"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="TRIG_OUT3" class="0">
 <segment>
 <pinref part="J180" gate="G$1" pin="A_7"/>
 <wire x1="137.16" y1="25.4" x2="142.24" y2="25.4" width="0.1524" layer="91"/>
 <label x="142.24" y="25.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="213.36" y1="5.08" x2="203.2" y2="5.08" width="0.1524" layer="91"/>
+<label x="187.96" y="5.08" size="1.778" layer="95"/>
+<pinref part="JP101" gate="A" pin="4"/>
+</segment>
 </net>
-<net name="N$27" class="0">
+<net name="TRIG_OUT1" class="0">
 <segment>
 <pinref part="J180" gate="G$1" pin="A_5"/>
 <wire x1="137.16" y1="27.94" x2="142.24" y2="27.94" width="0.1524" layer="91"/>
 <label x="142.24" y="27.94" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$28" class="0">
 <segment>
-<pinref part="J180" gate="G$1" pin="A_3"/>
-<wire x1="137.16" y1="30.48" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
-<label x="142.24" y="30.48" size="1.778" layer="95"/>
+<wire x1="213.36" y1="10.16" x2="203.2" y2="10.16" width="0.1524" layer="91"/>
+<label x="187.96" y="10.16" size="1.778" layer="95"/>
+<pinref part="JP101" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -13866,56 +14097,35 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <segment>
 <pinref part="IC100" gate="1" pin="CBUS0"/>
 <pinref part="JP100" gate="A" pin="1"/>
-<wire x1="142.24" y1="-38.1" x2="129.54" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-38.1" x2="129.54" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="IC100" gate="1" pin="CBUS1"/>
 <pinref part="JP100" gate="A" pin="2"/>
-<wire x1="142.24" y1="-40.64" x2="129.54" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-40.64" x2="129.54" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="IC100" gate="1" pin="CBUS2"/>
 <pinref part="JP100" gate="A" pin="3"/>
-<wire x1="142.24" y1="-43.18" x2="129.54" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-43.18" x2="129.54" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="IC100" gate="1" pin="CBUS3"/>
 <pinref part="JP100" gate="A" pin="4"/>
-<wire x1="142.24" y1="-45.72" x2="129.54" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-45.72" x2="129.54" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="IC100" gate="1" pin="CBUS4"/>
 <pinref part="JP100" gate="A" pin="5"/>
-<wire x1="142.24" y1="-48.26" x2="129.54" y2="-48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<wire x1="101.6" y1="-82.296" x2="101.6" y2="-82.55" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-82.55" x2="101.6" y2="-85.09" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-85.09" x2="101.6" y2="-87.63" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-87.63" x2="101.6" y2="-90.17" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-90.17" x2="101.6" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-91.44" x2="100.33" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="100.33" y1="-91.44" x2="100.33" y2="-91.694" width="0.1524" layer="91"/>
-<pinref part="J181" gate="G$1" pin="GND@1"/>
-<junction x="101.6" y="-82.55"/>
-<pinref part="J181" gate="G$1" pin="GND@2"/>
-<junction x="101.6" y="-85.09"/>
-<pinref part="J181" gate="G$1" pin="GND@3"/>
-<junction x="101.6" y="-87.63"/>
-<pinref part="J181" gate="G$1" pin="GND@4"/>
-<junction x="101.6" y="-90.17"/>
-<pinref part="GND26" gate="1" pin="GND"/>
-<junction x="100.33" y="-91.44"/>
+<wire x1="154.94" y1="-48.26" x2="129.54" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -14573,11 +14783,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <label x="-25.4" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="AAA" class="0">
+<net name="FPGA_GPIO0" class="0">
 <segment>
 <pinref part="J180" gate="G$1" pin="B_31"/>
 <wire x1="137.16" y1="63.5" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
 <label x="144.78" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP101" gate="A" pin="5"/>
+<wire x1="213.36" y1="2.54" x2="203.2" y2="2.54" width="0.1524" layer="91"/>
+<label x="185.42" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPW_DIN" class="0">
@@ -14628,11 +14843,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <label x="177.8" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="NNN" class="0">
+<net name="TRIG_OUT2" class="0">
 <segment>
 <pinref part="J180" gate="G$1" pin="A_6"/>
 <wire x1="91.44" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
-<label x="73.66" y="25.4" size="1.778" layer="95"/>
+<label x="71.12" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="213.36" y1="7.62" x2="203.2" y2="7.62" width="0.1524" layer="91"/>
+<label x="187.96" y="7.62" size="1.778" layer="95"/>
+<pinref part="JP101" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="SPW_DIN_N" class="0">
@@ -14799,7 +15019,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <segment>
 <pinref part="J180" gate="G$1" pin="A_0"/>
 <wire x1="91.44" y1="33.02" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
-<label x="60.96" y="33.02" size="1.778" layer="95"/>
+<label x="55.88" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC100" gate="1" pin="RXD"/>
@@ -15050,6 +15270,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="P_IN3" gate="G$1" pin="TP"/>
 <wire x1="-246.38" y1="-71.12" x2="-251.46" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="-246.38" y1="-76.2" x2="-246.38" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="-246.38" y="-71.12"/>
 </segment>
 </net>
 <net name="N$82" class="0">
@@ -15097,10 +15318,56 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-190.5" y1="53.34" x2="-190.5" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$93" class="0">
+<net name="FT232_/RTS_FPGA_/CTS" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="GND1"/>
-<wire x1="287.02" y1="116.84" x2="284.48" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="IC100" gate="1" pin="!RTS"/>
+<wire x1="129.54" y1="-20.32" x2="142.24" y2="-20.32" width="0.1524" layer="91"/>
+<label x="142.24" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J180" gate="G$1" pin="A_3"/>
+<wire x1="137.16" y1="30.48" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
+<label x="142.24" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FT232_/CTS_FPGA_/RTS" class="0">
+<segment>
+<pinref part="IC100" gate="1" pin="!CTS"/>
+<wire x1="129.54" y1="-22.86" x2="142.24" y2="-22.86" width="0.1524" layer="91"/>
+<label x="142.24" y="-22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J180" gate="G$1" pin="A_2"/>
+<wire x1="91.44" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<label x="55.88" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="IC100" gate="1" pin="!DCD"/>
+<pinref part="U$23" gate="G$1" pin="NC"/>
+<wire x1="142.24" y1="-30.48" x2="129.54" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="IC100" gate="1" pin="!DSR"/>
+<pinref part="U$24" gate="G$1" pin="NC"/>
+<wire x1="142.24" y1="-27.94" x2="129.54" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="IC100" gate="1" pin="!DTR"/>
+<pinref part="U$25" gate="G$1" pin="NC"/>
+<wire x1="142.24" y1="-25.4" x2="129.54" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="IC100" gate="1" pin="!RI"/>
+<pinref part="U$26" gate="G$1" pin="NC"/>
+<wire x1="142.24" y1="-33.02" x2="129.54" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -15383,6 +15650,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="GND53" gate="1" x="132.08" y="-83.82"/>
 <instance part="C622" gate="C" x="157.48" y="-93.98" rot="R180"/>
 <instance part="P+13" gate="1" x="175.26" y="-68.58" rot="R270"/>
+<instance part="GND56" gate="1" x="71.12" y="-121.92"/>
+<instance part="AGND37" gate="VR1" x="81.28" y="-121.92"/>
+<instance part="GND57" gate="1" x="88.9" y="-121.92"/>
+<instance part="TP_GND" gate="G$1" x="71.12" y="-114.3"/>
+<instance part="TP_GND1" gate="G$1" x="81.28" y="-114.3"/>
+<instance part="TP_GND2" gate="G$1" x="88.9" y="-114.3"/>
 </instances>
 <busses>
 </busses>
@@ -15407,6 +15680,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="139.7" y1="-68.58" x2="144.78" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="C620" gate="C" pin="2"/>
 <wire x1="154.94" y1="-58.42" x2="139.7" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="139.7" y="-58.42"/>
 </segment>
 <segment>
 <pinref part="U620" gate="G$1" pin="/SHDN"/>
@@ -15496,10 +15770,27 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="177.8" y1="-73.66" x2="172.72" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="C620" gate="C" pin="1"/>
 <wire x1="160.02" y1="-58.42" x2="177.8" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="177.8" y="-58.42"/>
 </segment>
 <segment>
 <pinref part="C621" gate="C" pin="2"/>
 <pinref part="GND53" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND56" gate="1" pin="GND"/>
+<wire x1="71.12" y1="-119.38" x2="71.12" y2="-116.84" width="0.1524" layer="91"/>
+<pinref part="AGND37" gate="VR1" pin="AGND"/>
+<wire x1="71.12" y1="-116.84" x2="81.28" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-116.84" x2="81.28" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="GND57" gate="1" pin="GNDA"/>
+<wire x1="81.28" y1="-116.84" x2="88.9" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-116.84" x2="88.9" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="TP_GND" gate="G$1" pin="TP"/>
+<junction x="71.12" y="-116.84"/>
+<pinref part="TP_GND1" gate="G$1" pin="TP"/>
+<junction x="81.28" y="-116.84"/>
+<pinref part="TP_GND2" gate="G$1" pin="TP"/>
+<junction x="88.9" y="-116.84"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -15586,7 +15877,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <segment>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <pinref part="C600" gate="G$1" pin="+"/>
-<wire x1="27.94" y1="-27.94" x2="27.94" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-20.32" x2="27.94" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="U600" gate="G$1" pin="V_I"/>
 <wire x1="27.94" y1="-22.86" x2="27.94" y2="-30.48" width="0.1524" layer="91"/>
@@ -15677,6 +15967,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="132.08" y1="-73.66" x2="132.08" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="-76.2" x2="132.08" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="U$22" gate="G$1" pin="-3V3"/>
+<junction x="132.08" y="-73.66"/>
 </segment>
 </net>
 <net name="N$81" class="0">
@@ -15700,6 +15991,98 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,4,81.28,-119.38,AGND,GND,,,,"/>
+<approved hash="102,4,88.9,-119.38,GNDA,GND,,,,"/>
+<approved hash="104,4,17.78,78.74,U500PWR,V+,+5V_BEFORE_SENSE,,,"/>
+<approved hash="104,4,17.78,60.96,U500PWR,V-,GND,,,"/>
+<approved hash="104,2,-5.08,73.66,U100,AVDD,+3V3,,,"/>
+<approved hash="104,2,30.48,73.66,U100,AGND,GNDA,,,"/>
+<approved hash="104,2,-5.08,76.2,U100,DRVDD,+3V3,,,"/>
+<approved hash="104,2,-5.08,71.12,U100,AVDD,+3V3,,,"/>
+<approved hash="104,2,30.48,71.12,U100,AGND,GNDA,,,"/>
+<approved hash="104,2,30.48,76.2,U100,DGND,GND,,,"/>
+<approved hash="104,2,-5.08,15.24,U110,AVDD,+3V3,,,"/>
+<approved hash="104,2,30.48,15.24,U110,AGND,GNDA,,,"/>
+<approved hash="104,2,-5.08,17.78,U110,DRVDD,+3V3,,,"/>
+<approved hash="104,2,-5.08,12.7,U110,AVDD,+3V3,,,"/>
+<approved hash="104,2,30.48,12.7,U110,AGND,GNDA,,,"/>
+<approved hash="104,2,30.48,17.78,U110,DGND,GND,,,"/>
+<approved hash="104,2,-5.08,-50.8,U120,AVDD,+3V3,,,"/>
+<approved hash="104,2,30.48,-50.8,U120,AGND,GNDA,,,"/>
+<approved hash="104,2,-5.08,-48.26,U120,DRVDD,+3V3,,,"/>
+<approved hash="104,2,-5.08,-53.34,U120,AVDD,+3V3,,,"/>
+<approved hash="104,2,30.48,-53.34,U120,AGND,GNDA,,,"/>
+<approved hash="104,2,30.48,-48.26,U120,DGND,GND,,,"/>
+<approved hash="104,2,-5.08,-109.22,U130,AVDD,+3V3,,,"/>
+<approved hash="104,2,30.48,-109.22,U130,AGND,GNDA,,,"/>
+<approved hash="104,2,-5.08,-106.68,U130,DRVDD,+3V3,,,"/>
+<approved hash="104,2,-5.08,-111.76,U130,AVDD,+3V3,,,"/>
+<approved hash="104,2,30.48,-111.76,U130,AGND,GNDA,,,"/>
+<approved hash="104,2,30.48,-106.68,U130,DGND,GND,,,"/>
+<approved hash="104,2,101.6,-15.24,IC100,VCC,+3V3,,,"/>
+<approved hash="104,2,101.6,-17.78,IC100,VCCIO,+3V3,,,"/>
+<approved hash="103,2,91.44,-22.86,U$1,NC,N$25,,,"/>
+<approved hash="103,2,91.44,-27.94,U$2,NC,N$32,,,"/>
+<approved hash="103,2,91.44,-30.48,U$3,NC,N$33,,,"/>
+<approved hash="104,2,-111.76,116.84,U101,V+,+3V3,,,"/>
+<approved hash="104,2,-111.76,101.6,U101,V-,-3V3,,,"/>
+<approved hash="104,2,-111.76,58.42,U111,V+,+3V3,,,"/>
+<approved hash="104,2,-111.76,43.18,U111,V-,-3V3,,,"/>
+<approved hash="104,2,-111.76,-7.62,U121,V+,+3V3,,,"/>
+<approved hash="104,2,-111.76,-22.86,U121,V-,-3V3,,,"/>
+<approved hash="104,2,-111.76,-66.04,U131,V+,+3V3,,,"/>
+<approved hash="104,2,-111.76,-81.28,U131,V-,-3V3,,,"/>
+<approved hash="104,1,-91.44,48.26,U5P,V_DD,+3V3,,,"/>
+<approved hash="104,1,-60.96,50.8,U5P,DGND,GND,,,"/>
+<approved hash="103,2,81.28,121.92,U$8,NC,N$53,,,"/>
+<approved hash="103,1,35.56,-10.16,U$9,NC,N$56,,,"/>
+<approved hash="103,1,35.56,-15.24,U$10,NC,N$57,,,"/>
+<approved hash="103,1,81.28,-15.24,U$11,NC,N$51,,,"/>
+<approved hash="103,1,81.28,25.4,U$12,NC,N$52,,,"/>
+<approved hash="104,1,45.72,-86.36,U11P,V_DD,+3V3,,,"/>
+<approved hash="104,1,76.2,-86.36,U11P,V_SS,GND,,,"/>
+<approved hash="104,2,195.58,109.22,U190,VCC,+3V3,,,"/>
+<approved hash="104,2,198.12,71.12,U191,VCC,+3V3,,,"/>
+<approved hash="104,2,198.12,55.88,U191,VBACKUP,N$64,,,"/>
+<approved hash="104,2,198.12,50.8,U191,EX_ANT,N$66,,,"/>
+<approved hash="103,2,198.12,55.88,U$18,NC,N$64,,,"/>
+<approved hash="103,2,198.12,50.8,U$20,NC,N$66,,,"/>
+<approved hash="103,2,198.12,48.26,U$21,NC,N$67,,,"/>
+<approved hash="104,2,-236.22,96.52,U102P,V+,+3V3,,,"/>
+<approved hash="104,2,-218.44,96.52,U102P,V-,-3V3,,,"/>
+<approved hash="104,2,-236.22,38.1,U112P,V+,+3V3,,,"/>
+<approved hash="104,2,-218.44,38.1,U112P,V-,-3V3,,,"/>
+<approved hash="104,2,-236.22,-27.94,U122P,V+,+3V3,,,"/>
+<approved hash="104,2,-218.44,-27.94,U122P,V-,-3V3,,,"/>
+<approved hash="104,2,-236.22,-86.36,U132P,V+,+3V3,,,"/>
+<approved hash="104,2,-218.44,-86.36,U132P,V-,-3V3,,,"/>
+<approved hash="104,4,17.78,35.56,U510PWR,V+,+3V3_BEFORE_SENSE,,,"/>
+<approved hash="104,4,17.78,17.78,U510PWR,V-,GND,,,"/>
+<approved hash="104,4,50.8,-22.86,U600,V_I,+12V,,,"/>
+<approved hash="104,4,83.82,-22.86,U600,V_O,5V_BEFORE_SENSE,,,"/>
+<approved hash="103,4,88.9,-30.48,U$17,NC,N$59,,,"/>
+<approved hash="104,4,50.8,-55.88,U610,V_I,+12V,,,"/>
+<approved hash="104,4,83.82,-55.88,U610,V_O,3V3_BEFORE_SENSE,,,"/>
+<approved hash="103,4,88.9,-63.5,U$19,NC,N$76,,,"/>
+<approved hash="104,4,144.78,-68.58,U620,VCC,+5V,,,"/>
+<approved hash="104,4,144.78,-73.66,U620,VOUT,-3V3,,,"/>
+<approved hash="104,2,287.02,116.84,J2,GND1,GND,,,"/>
+<approved hash="104,2,287.02,114.3,J2,GND2,GND,,,"/>
+<approved hash="103,2,142.24,-30.48,U$23,NC,N$24,,,"/>
+<approved hash="103,2,142.24,-27.94,U$24,NC,N$26,,,"/>
+<approved hash="103,2,142.24,-25.4,U$25,NC,N$27,,,"/>
+<approved hash="103,2,142.24,-33.02,U$26,NC,N$28,,,"/>
+<approved hash="106,4,83.82,-55.88,3V3_BEFORE_SENSE,,,,,"/>
+<approved hash="106,4,83.82,-22.86,5V_BEFORE_SENSE,,,,,"/>
+<approved hash="113,2,155.177,-41.7788,JP100,,,,,"/>
+<approved hash="113,1,66.6126,-34.1588,TP_SPI,,,,,"/>
+<approved hash="113,1,79.9677,-101.469,JP1,,,,,"/>
+<approved hash="113,2,-87.9586,167.64,SJ1,,,,,"/>
+<approved hash="113,1,-74.9723,22.9912,JP2,,,,,"/>
+<approved hash="113,2,213.597,7.75123,JP101,,,,,"/>
+<approved hash="116,2,137.16,15.23,J180,A_15,ADC2_D7,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
