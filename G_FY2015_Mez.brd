@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.254" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -181,7 +181,7 @@
 <text x="37.15" y="86.93" size="1.2" layer="21" rot="R90">Ch.3</text>
 <text x="121" y="80" size="1.4224" layer="21" align="center">GROWTH-FW2015
 Electronics Board
-Version 20150518</text>
+Version 20150519</text>
 <wire x1="0" y1="0" x2="0" y2="100" width="0.2" layer="20"/>
 </plain>
 <libraries>
@@ -7709,6 +7709,26 @@ design rules under a new name.</description>
 <via x="138.9" y="32.4" extent="1-16" drill="0.3"/>
 <wire x1="6.826" y1="89.314" x2="6.826" y2="76.104" width="0.127" layer="1"/>
 <wire x1="6.826" y1="76.104" x2="10.7" y2="72.23" width="0.127" layer="1"/>
+<polygon width="0.127" layer="16" isolate="0.3048">
+<vertex x="-5" y="-5"/>
+<vertex x="165" y="-5"/>
+<vertex x="165" y="105"/>
+<vertex x="-5" y="105"/>
+<vertex x="-5" y="92"/>
+<vertex x="34" y="92"/>
+<vertex x="34" y="77"/>
+<vertex x="-5" y="77"/>
+</polygon>
+<polygon width="0.127" layer="1" isolate="0.3048">
+<vertex x="-5" y="-5"/>
+<vertex x="165" y="-5"/>
+<vertex x="165" y="105"/>
+<vertex x="-4" y="105"/>
+<vertex x="-4" y="92"/>
+<vertex x="34" y="92"/>
+<vertex x="34" y="77"/>
+<vertex x="-5" y="77"/>
+</polygon>
 </signal>
 <signal name="AGND">
 <contactref element="VR100" pad="1"/>
