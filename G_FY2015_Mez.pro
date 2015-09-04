@@ -1,25 +1,27 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/yuasa/Documents/work/eagle/GROWTH-FY2015-ADC/G_FY2015_Mez.brd
+Job           : /Users/yuasa/Documents/work/eagle/GROWTH-FY2015-ADCb/G_FY2015_Mez.brd
 
-Start at      : 14:32:30 (2015/05/19)
-End at        : 14:41:55 (2015/05/19)
-Elapsed time  : 00:09:25
+Start at      : 15:08:28 (2015/09/04)
+End at        : 15:09:47 (2015/09/04)
+Elapsed time  : 00:01:18
 
-Signals       :   201   RoutingGrid: 3.93701 mil  Layers: 2
-Connections   :   510   predefined:  7 ( 2 Vias )
+Signals       :   216   RoutingGrid: 3.93701 mil  Layers: 2
+Connections   :   524   predefined:  6 ( 0 Vias )
 
-Router memory :   6716580
+Router memory :   7437312
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Job has been interrupted!
 
-Time per pass     :  00:00:08  00:03:54  00:01:08  00:01:29  00:01:18  00:01:28
-Number of Ripups  :         0        28         0         0         0         0
-max. Level        :         0         2         0         0         0         0
-max. Total        :         0       142         0         0         0         0
+Passname          :    Busses     Route
 
-Routed            :        66       502       502       502       503       503
-Vias              :         0       706       562       241       212       200
-Resolution        :    14.3 %    99.8 %    99.8 %    99.8 %   100.0 %   100.0 %
+Time per pass     :  00:00:08  00:01:10
+Number of Ripups  :         0         4
+max. Level        :         0         1
+max. Total        :         0       156
 
-Final             : 100.0% finished
+Routed            :        71       308
+Vias              :         0       163
+Resolution        :    14.7 %    59.9 %
+
+Final             : interrupted
