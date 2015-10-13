@@ -1,0 +1,135 @@
+#=============================================
+# Package => pin/type/package
+#=============================================
+"LED_1608":
+    "pin": 2
+    "type": SMD
+    "package": 1608
+"2012":
+    "pin": 2
+    "type": SMD
+    "package": 2012
+"3216":
+    "pin": 2
+    "type": SMD
+    "package": 3216
+"C0805":
+    "pin": 2
+    "type": SMD
+    "package": 2012
+"C0603":
+    "pin": 2
+    "type": SMD
+    "package": 1608
+"E2,5-5":
+    "pin": 2
+    "type": DIP
+"ADJRP3-9.70XW5.0X9.80MM":
+    "pin": 2
+    "type": DIP
+"SSOP28":
+    "pin": 28
+    "type": SMD
+    "package": SSOP28
+"SSOP28DB":
+    "pin": 28
+    "type": SMD
+    "package": SSOP28
+"RPI2_GPIO_HOLES":
+    "pin": 40
+    "type": DIP
+"IL-2P-S3EN2":
+    "pin": 2
+    "type": DIP
+"IL-3P-S3EN2":
+    "pin": 3
+    "type": DIP
+"IL-4P-S3EN2":
+    "pin": 4
+    "type": DIP
+"EPL.00.250.NTN":
+    "pin": 5
+    "type": DIP
+"TOKUDEN_SP6":
+    "pin": 40 x 2
+    "type": DIP
+"MINIUSB5+4P-SMD-0.8-90D":
+    "pin": 9
+    "type": SMD
+"LUMBERG_2410-01":
+    "pin": 6
+    "type": DIP
+"2X02":
+    "pin": 4
+    "type": DIP
+"1X05":
+    "pin": 5
+    "type": DIP
+"SOIC-16(150MIL)(1.27MM)":
+    "pin": 16
+    "type": SMD
+    "package": "SOIC-16"
+"TSOT-23-3":
+    "pin": 3
+    "type": SMD
+    "package": "TSOT-23-3"
+"TO-92-R2.5C":
+    "pin": 3
+    "type": DIP
+    "package": "TO-92"
+"TSSOP-28(4.4MM)(0.65MM)_LONGPAD":
+    "pin": 28
+    "type": SMD
+    "package": "TSSOP-28"
+"SOP8":
+    "pin": 8
+    "type": SMD
+    "package": "SOP-8"
+"SOIC-8(150MIL)(1.27MM)":
+    "pin": 8
+    "type": SMD
+    "package": "SOIC-8"
+"GPS_FGPMMOPA6H":
+    "pin": 20
+    "type": SMD
+"2-7J2B":
+    "pin": 3
+    "type": DIP
+    "package": "2-7J2B"
+"TSOT-5":
+    "pin": 5
+    "type": SMD
+    "package": "TSOT-5"
+"PHT12050":
+    "pin": 6
+    "type": DIP
+"PJ-102A":
+    "pin": 3
+    "type": DIP
+"R_LVR03":
+    "pin": 2
+    "type": DIP
+"LCD16X2":
+    "pin": 14
+    "type": DIP
+#---------------------------------------------
+#non-mount
+"OPTON_PA":
+    "mount": false
+    "pin": 9
+    "type": DIP
+"SJ_2W":
+    "mount": false
+    "pin": 3
+    "type": SMD
+"P1-13":
+    "mount": false
+    "pin": 1
+    "type": DIP
+"SHV_PIGTAIL_LAND":
+    "mount": false
+    "pin": 2
+    "type": DIP
+"SOT-23":
+    "pin": 6
+    "type": SMD

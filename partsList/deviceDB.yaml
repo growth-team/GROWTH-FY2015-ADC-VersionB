@@ -1,0 +1,179 @@
+#=============================================
+# Device => Part Info
+#=============================================
+"R_LVR03":
+    "0.01":
+        name: LVR03R0100FE12
+        company: Vishay
+        class: 抵抗
+"DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)":
+    "5k":
+        name: T93YA502KT20
+        company: Vishay
+        class: 可変抵抗
+"CPOL-USE2.5-5":
+    "100u":
+        name: UVR1V101MED
+        company: Nichicon
+        class: 電解コンデンサ
+        rs: 
+"LED_1608":
+    "SML-311WTT86":
+        name: "SML-311WTT86"
+        company: ROHM
+        class: チップLED
+        rs: 752-6789
+"FT232RL":
+    "FT232RL":
+        name: FT232RL
+        company: Future Technology
+        class: IC
+        rs: 888-8732
+"FT245RL":
+    "FT245RL":
+        name: FT245RL
+        company: Future Technology
+        class: IC
+        rs: 406-540
+"RPI2_GPIO_HOLES":
+    "RPI2_GPIO_HOLES":
+        name: "2x20 ピンソケット"
+        company: 不明
+        class: ピンソケット
+"IL-2P-S3EN2":
+    "IL-2P-S3EN2":
+        name: "IL-G-2P-S3T2-SA"
+        company: JAE
+        class: コネクタ
+        rs: 490-6508
+"IL-3P-S3EN2":
+    "IL-3P-S3EN2":
+        name: "IL-G-3P-S3T2-SA"
+        company: JAE
+        class: コネクタ
+        rs: 490-6514
+"IL-4P-S3EN2":
+    "IL-4P-S3EN2":
+        name: "IL-G-4P-S3T2-SA"
+        company: JAE
+        class: コネクタ
+        rs: 490-6520
+"MINI-USB-RCPT-B-5PS-R/A-SMD(ST-USB-002A)":
+    "USB Mini-B Connector":
+        name: 54819-0572
+        company: Molex
+        class: USB mini Bコネクタ
+        rs: 515-1995
+"EPL.00.250.NTN":
+    "EPL.00.250.NTN":
+        name: EPL.00.250.NTN
+        company: LEMO
+        class: 同軸コネクタ
+        rs: 124-8635
+"TOKUDEN_SP6":
+    "TOKUDEN_SP6":
+        name: 2x20のピンソケットを2個
+        company: 不明
+        class: ピンソケット
+"2.1MMJACKTHM":
+    "2.1MMJACKTHM":
+        name: LD-0202-2.0
+        company: RSコンポーネンツ
+        class: DC電源ソケット
+        rs: 448-382
+"USB_TYPEA_LUMBERG_2410_01":
+    "USB_TYPEA_LUMBERG_2410_01":
+        name: "2410 01"
+        company: Lumberg
+        class: USB Type Aコネクタ
+        rs: 737-8782
+"PINHD-2X2":
+    "":
+        name: "2x2ピンヘッダ"
+        company: 不明
+        class: ピンヘッダ
+"LCD16X2":
+    "LCD16X2":
+        name: "2x7ピンソケット"
+        company: 不明
+        class: ピンソケット
+"PINHD-1X5":
+    "":
+        name: "1x5ピンヘッダ"
+        company: 不明
+        class: ピンヘッダ
+        rs: 681-2985
+"MCP3208-CI/SL":
+    "MCP3208-CI/SL":
+        name: MCP3208-CI/SL
+        company: Microchip
+        class: IC
+"MCP1525TSOT-23-3":
+    "MCP1525TSOT-23-3":
+        name: MCP1525T-I/TT
+        company: Microchip
+        class: IC
+        rs: 698-9069
+"LM60":
+    "LM60":
+        name: LM60CIZ/NOPB
+        company: Texas Instruments
+        class: 温度センサ
+        rs: 761-6003
+"AD9215LONG_PAD":
+    "AD9215LONG_PAD":
+        name: AD9215BRUZ-65
+        company: Analog Devices
+        class: IC
+        rs: 538-6371
+"AD8138":
+    "AD8138":
+        name: AD8138AARZ
+        company: Analog Devices
+        class: IC
+        rs: 820-8990
+"LM6172SOIC(D)8":
+    "LM6172":
+        name: LM6172IM/NOPB
+        company: Texas Instruments
+        class: IC
+        rs: 534-3627
+"GPS_FGPMMOPA6H":
+    "GPS_FGPMMOPA6H":
+        name: FGPMMOPA6H
+        company: GlobalTop
+        class: GPSモジュール
+"2SC1815":
+    "2SC1815":
+        name: KSP2222ABU
+        company: Fairchild Semiconductor
+        class: トランジスタ
+        rs: 739-0385
+"2SJ681":
+    "2SJ681":
+        name: 2SJ681
+        company: TOSHIBA
+        class: P-ch MOSFET
+        rs: 362-812
+"LT6106":
+    "LT6106":
+        name: "LT6106HS5#TRMPBF"
+        company: Linear Technology
+        class: IC
+        rs: 786-9727
+"PHT12050WAH":
+    "PHT12050WAH":
+        name: PTH12050WAH
+        company: Texas Instruments
+        class: DCDC電源モジュール
+        rs: 660-6392
+"LTC1983ES6-3":
+    "LTC1983ES6-3":
+        name: "LTC1983ES6-3#TRMPBF"
+        company: Linear Technology
+        class: IC
+"LTC1983ES6-5":
+    "LTC1983ES6-5":
+        name: "LTC1983ES6-5#TRMPBF"
+        company: Linear Technology
+        class: IC

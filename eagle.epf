@@ -127,10 +127,10 @@ UsedLibrary="/Applications/EAGLE-6.5.0/lbr/wirepad.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="484 23 1189 617"
+Loc="138 44 843 638"
 State=2
 Number=0
 
 [Desktop]
-Screen="1280 800"
+Screen="1920 1200"
 Window="Win_1"

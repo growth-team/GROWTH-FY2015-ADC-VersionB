@@ -1,0 +1,32 @@
+#部品種類	メーカー型番	メーカー	個数
+ピンヘッダ	1x5ピンヘッダ	不明	1
+USB Type Aコネクタ	2410 01	Lumberg	2
+P-ch MOSFET	2SJ681	TOSHIBA	2
+ピンソケット	2x20 ピンソケット	不明	1
+ピンソケット	2x20のピンソケットを2個	不明	1
+ピンヘッダ	2x2ピンヘッダ	不明	1
+ピンソケット	2x7ピンソケット	不明	1
+USB mini Bコネクタ	54819-0572	Molex	2
+IC	AD8138AARZ	Analog Devices	4
+IC	AD9215BRUZ-65	Analog Devices	4
+同軸コネクタ	EPL.00.250.NTN	LEMO	4
+GPSモジュール	FGPMMOPA6H	GlobalTop	1
+IC	FT232RL	Future Technology	1
+IC	FT245RL	Future Technology	1
+コネクタ	IL-G-2P-S3T2-SA	JAE	3
+コネクタ	IL-G-3P-S3T2-SA	JAE	3
+コネクタ	IL-G-4P-S3T2-SA	JAE	3
+トランジスタ	KSP2222ABU	Fairchild Semiconductor	2
+DC電源ソケット	LD-0202-2.0	RSコンポーネンツ	1
+温度センサ	LM60CIZ/NOPB	Texas Instruments	2
+IC	LM6172IM/NOPB	Texas Instruments	2
+IC	LT6106HS5#TRMPBF	Linear Technology	2
+IC	LTC1983ES6-3#TRMPBF	Linear Technology	1
+IC	LTC1983ES6-5#TRMPBF	Linear Technology	1
+抵抗	LVR03R0100FE12	Vishay	2
+IC	MCP1525T-I/TT	Microchip	1
+IC	MCP3208-CI/SL	Microchip	1
+DCDC電源モジュール	PTH12050WAH	Texas Instruments	2
+チップLED	SML-311WTT86	ROHM	4
+可変抵抗	T93YA502KT20	Vishay	5
+電解コンデンサ	UVR1V101MED	Nichicon	2
