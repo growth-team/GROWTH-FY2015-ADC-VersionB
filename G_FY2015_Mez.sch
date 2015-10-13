@@ -12100,14 +12100,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND82" library="Aardvark" deviceset="GND" device=""/>
 <part name="+3V16" library="Aardvark" deviceset="+3V3" device=""/>
 <part name="SJ100" library="Aardvark" deviceset="SJ2W" device="W"/>
-<part name="J111" library="Aardvark" deviceset="IL-2P-S3EN2" device=""/>
 <part name="J121" library="Aardvark" deviceset="IL-2P-S3EN2" device=""/>
 <part name="J131" library="Aardvark" deviceset="IL-2P-S3EN2" device=""/>
-<part name="J101" library="Aardvark" deviceset="IL-2P-S3EN2" device=""/>
-<part name="GND93" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND94" library="Aardvark" deviceset="GND" device=""/>
 <part name="GND95" library="Aardvark" deviceset="GND" device=""/>
-<part name="GND96" library="Aardvark" deviceset="GND" device=""/>
 <part name="VR100" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device="" value="5k"/>
 <part name="VR110" library="Aardvark" deviceset="DIP-TRIMMER-10K-10%-1/2W(3P-9.7X5.0X9.80MM)" device="" value="5k"/>
 <part name="R109" library="Aardvark" deviceset="R2012" device="" value="51"/>
@@ -12207,8 +12203,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="LED_RPI" library="Aardvark" deviceset="LED_1608" device="" value="SML-311WTT86"/>
 <part name="R400" library="Aardvark" deviceset="R2012" device="" value="680"/>
 <part name="GND45" library="Aardvark" deviceset="GND" device=""/>
-<part name="VR100PIN2" library="Aardvark" deviceset="TP" device="PAD1-13"/>
-<part name="VR110PIN2" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="VR100P2" library="Aardvark" deviceset="TP" device="PAD1-13"/>
+<part name="VR110P2" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="VR_HV0" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="VR_HV1" library="Aardvark" deviceset="TP" device="PAD1-13"/>
 <part name="-3V" library="Aardvark" deviceset="TP" device="PAD1-13"/>
@@ -13179,14 +13175,10 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <instance part="U$35" gate="G$1" x="129.54" y="-45.72" rot="R270"/>
 <instance part="U$36" gate="G$1" x="129.54" y="-48.26" rot="R270"/>
 <instance part="SJ100" gate="G$1" x="-160.02" y="111.76" rot="R180"/>
-<instance part="J111" gate="G$1" x="-281.94" y="38.1" rot="MR0"/>
 <instance part="J121" gate="G$1" x="-281.94" y="-27.94" rot="MR0"/>
 <instance part="J131" gate="G$1" x="-281.94" y="-86.36" rot="MR0"/>
-<instance part="J101" gate="G$1" x="-281.94" y="96.52" rot="MR0"/>
-<instance part="GND93" gate="1" x="-279.4" y="35.56"/>
 <instance part="GND94" gate="1" x="-279.4" y="-30.48"/>
 <instance part="GND95" gate="1" x="-279.4" y="-88.9"/>
-<instance part="GND96" gate="1" x="-279.4" y="93.98"/>
 <instance part="VR100" gate="G$1" x="-210.82" y="124.46"/>
 <instance part="VR110" gate="G$1" x="-210.82" y="63.5"/>
 <instance part="R109" gate="R" x="-182.88" y="111.76" rot="R180"/>
@@ -13287,8 +13279,8 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <instance part="R_PZC0" gate="R" x="-226.06" y="99.06"/>
 <instance part="R_PZC1" gate="R" x="-226.06" y="40.64"/>
 <instance part="U$42" gate="G$1" x="99.06" y="-127" rot="R90"/>
-<instance part="VR100PIN2" gate="G$1" x="-228.6" y="114.3" rot="R90"/>
-<instance part="VR110PIN2" gate="G$1" x="-228.6" y="55.88" rot="R90"/>
+<instance part="VR100P2" gate="G$1" x="-228.6" y="114.3" rot="R90"/>
+<instance part="VR110P2" gate="G$1" x="-228.6" y="55.88" rot="R90"/>
 </instances>
 <busses>
 <bus name="ADC0_D[0..9]">
@@ -13811,14 +13803,6 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="-10.16" y1="12.7" x2="-10.16" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND103" gate="1" pin="GND"/>
 <junction x="-10.16" y="12.7"/>
-</segment>
-<segment>
-<pinref part="GND96" gate="1" pin="GND"/>
-<pinref part="J101" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="GND93" gate="1" pin="GND"/>
-<pinref part="J111" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND94" gate="1" pin="GND"/>
@@ -15240,16 +15224,12 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <segment>
 <pinref part="J100" gate="G$1" pin="1"/>
 <wire x1="-274.32" y1="111.76" x2="-276.86" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-279.4" y1="99.06" x2="-274.32" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-274.32" y1="99.06" x2="-274.32" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-274.32" y="111.76"/>
-<pinref part="J101" gate="G$1" pin="1"/>
 <wire x1="-274.32" y1="106.68" x2="-274.32" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="-274.32" y1="111.76" x2="-274.32" y2="116.84" width="0.1524" layer="91"/>
 <label x="-274.32" y="116.84" size="1.778" layer="95"/>
 <pinref part="SJ101" gate="G$1" pin="1"/>
 <wire x1="-264.16" y1="106.68" x2="-274.32" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-274.32" y="106.68"/>
 </segment>
 <segment>
 <pinref part="SJ100" gate="G$1" pin="3"/>
@@ -15269,9 +15249,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <pinref part="R102" gate="R" pin="2"/>
 <wire x1="-139.7" y1="106.68" x2="-132.08" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="P_OUT0" gate="G$1" pin="TP"/>
-<wire x1="-142.24" y1="111.76" x2="-142.24" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="114.3" x2="-142.24" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="114.3" x2="-142.24" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="111.76" x2="-142.24" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">
@@ -15318,14 +15296,10 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="-274.32" y1="53.34" x2="-276.86" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-274.32" y="53.34"/>
 <wire x1="-274.32" y1="53.34" x2="-274.32" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-274.32" y1="40.64" x2="-274.32" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-274.32" y1="48.26" x2="-274.32" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-279.4" y1="40.64" x2="-274.32" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="J111" gate="G$1" pin="1"/>
 <label x="-274.32" y="58.42" size="1.778" layer="95"/>
 <pinref part="SJ111" gate="G$1" pin="1"/>
 <wire x1="-264.16" y1="48.26" x2="-274.32" y2="48.26" width="0.1524" layer="91"/>
-<junction x="-274.32" y="48.26"/>
 </segment>
 </net>
 <net name="AIN_2" class="0">
@@ -15713,7 +15687,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <segment>
 <pinref part="U102" gate="B" pin="-"/>
 <wire x1="-226.06" y1="114.3" x2="-210.82" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="VR100PIN2" gate="G$1" pin="TP"/>
+<pinref part="VR100P2" gate="G$1" pin="TP"/>
 <pinref part="VR100" gate="G$1" pin="2"/>
 <wire x1="-210.82" y1="114.3" x2="-208.28" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-210.82" y1="119.38" x2="-210.82" y2="114.3" width="0.1524" layer="91"/>
@@ -15726,7 +15700,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="-210.82" y1="58.42" x2="-210.82" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U112" gate="B" pin="-"/>
 <wire x1="-210.82" y1="55.88" x2="-208.28" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="VR110PIN2" gate="G$1" pin="TP"/>
+<pinref part="VR110P2" gate="G$1" pin="TP"/>
 <wire x1="-226.06" y1="55.88" x2="-210.82" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-210.82" y="55.88"/>
 </segment>
@@ -16676,6 +16650,9 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 </sheet>
 </sheets>
 <errors>
+<approved hash="102,4,48.26,-43.18,AGND,GND,,,,"/>
+<approved hash="104,4,35.56,58.42,U500PWR,V+,+5V_BEFORE_SENSE,,,"/>
+<approved hash="104,4,35.56,40.64,U500PWR,V-,GND,,,"/>
 <approved hash="104,2,-5.08,73.66,U100,AVDD,+3V3,,,"/>
 <approved hash="104,2,30.48,73.66,U100,AGND,GND,,,"/>
 <approved hash="104,2,-5.08,76.2,U100,DRVDD,+3V3,,,"/>
@@ -16700,6 +16677,11 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <approved hash="104,2,-5.08,-111.76,U130,AVDD,+3V3,,,"/>
 <approved hash="104,2,30.48,-111.76,U130,AGND,GND,,,"/>
 <approved hash="104,2,30.48,-106.68,U130,DGND,GND,,,"/>
+<approved hash="104,2,101.6,-15.24,IC100,VCC,+5V,,,"/>
+<approved hash="104,2,101.6,-17.78,IC100,VCCIO,+3V3,,,"/>
+<approved hash="103,2,101.6,-22.86,U$1,NC,N$25,,,"/>
+<approved hash="103,2,101.6,-27.94,U$2,NC,N$32,,,"/>
+<approved hash="103,2,101.6,-30.48,U$3,NC,N$33,,,"/>
 <approved hash="104,2,-111.76,116.84,U101,V+,+3V3,,,"/>
 <approved hash="104,2,-111.76,101.6,U101,V-,-3V3,,,"/>
 <approved hash="104,2,-111.76,58.42,U111,V+,+3V3,,,"/>
@@ -16708,15 +16690,78 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <approved hash="104,2,-111.76,-22.86,U121,V-,-3V3,,,"/>
 <approved hash="104,2,-111.76,-66.04,U131,V+,+3V3,,,"/>
 <approved hash="104,2,-111.76,-81.28,U131,V-,-3V3,,,"/>
-<approved hash="104,1,-91.44,48.26,U5P,V_DD,+3V3,,,"/>
-<approved hash="104,1,-60.96,48.26,U5P,AGND,GND,,,"/>
-<approved hash="104,1,-60.96,50.8,U5P,DGND,GND,,,"/>
+<approved hash="104,1,-91.44,48.26,U410P,V_DD,+3V3,,,"/>
+<approved hash="104,1,-60.96,48.26,U410P,AGND,GND,,,"/>
+<approved hash="104,1,-60.96,50.8,U410P,DGND,GND,,,"/>
 <approved hash="103,2,81.28,121.92,U$8,NC,N$53,,,"/>
 <approved hash="103,1,35.56,-10.16,U$9,NC,N$56,,,"/>
 <approved hash="103,1,35.56,-15.24,U$10,NC,N$57,,,"/>
 <approved hash="103,1,81.28,-15.24,U$11,NC,N$51,,,"/>
 <approved hash="103,1,81.28,25.4,U$12,NC,N$52,,,"/>
-<approved hash="113,1,-74.9723,22.9912,JP2,,,,,"/>
+<approved hash="104,2,99.06,-109.22,U191,VCC,+3V3,,,"/>
+<approved hash="104,2,99.06,-124.46,U191,VBACKUP,N$64,,,"/>
+<approved hash="104,2,99.06,-129.54,U191,EX_ANT,N$66,,,"/>
+<approved hash="103,2,99.06,-124.46,U$18,NC,N$64,,,"/>
+<approved hash="103,2,99.06,-129.54,U$20,NC,N$66,,,"/>
+<approved hash="103,2,99.06,-132.08,U$21,NC,N$67,,,"/>
+<approved hash="104,2,-261.62,96.52,U102P,V+,+5V,,,"/>
+<approved hash="104,2,-243.84,96.52,U102P,V-,-5V,,,"/>
+<approved hash="104,2,-261.62,38.1,U112P,V+,+5V,,,"/>
+<approved hash="104,2,-243.84,38.1,U112P,V-,-5V,,,"/>
+<approved hash="104,4,35.56,15.24,U510PWR,V+,+3V3_BEFORE_SENSE,,,"/>
+<approved hash="104,4,35.56,-2.54,U510PWR,V-,GND,,,"/>
+<approved hash="104,4,-43.18,55.88,U600,V_I,+12V,,,"/>
+<approved hash="104,4,-10.16,55.88,U600,V_O,+5V_BEFORE_SENSE,,,"/>
+<approved hash="103,4,-5.08,48.26,U$17,NC,N$59,,,"/>
+<approved hash="104,4,-43.18,22.86,U610,V_I,+12V,,,"/>
+<approved hash="104,4,-10.16,22.86,U610,V_O,+3V3_BEFORE_SENSE,,,"/>
+<approved hash="103,4,-5.08,15.24,U$19,NC,N$76,,,"/>
+<approved hash="104,4,-53.34,-43.18,U620,VCC,+5V,,,"/>
+<approved hash="104,4,-53.34,-48.26,U620,VOUT,-3V3,,,"/>
+<approved hash="103,2,129.54,-30.48,U$23,NC,N$24,,,"/>
+<approved hash="103,2,129.54,-27.94,U$24,NC,N$26,,,"/>
+<approved hash="103,2,129.54,-25.4,U$25,NC,N$27,,,"/>
+<approved hash="103,2,129.54,-33.02,U$26,NC,N$28,,,"/>
+<approved hash="103,2,101.6,-43.18,U$29,NC,N$35,,,"/>
+<approved hash="104,4,72.39,-60.96,J630,VCC,5V_SW_OUT,,,"/>
+<approved hash="103,4,73.66,-66.04,U$30,NC,N$88,,,"/>
+<approved hash="103,4,73.66,-63.5,U$31,NC,N$34,,,"/>
+<approved hash="104,4,72.39,-83.82,J640,VCC,+5V,,,"/>
+<approved hash="103,4,73.66,-88.9,U$27,NC,N$90,,,"/>
+<approved hash="103,4,73.66,-86.36,U$28,NC,N$89,,,"/>
+<approved hash="103,2,129.54,-38.1,U$32,NC,N$21,,,"/>
+<approved hash="103,2,129.54,-40.64,U$33,NC,N$22,,,"/>
+<approved hash="103,2,129.54,-43.18,U$34,NC,N$29,,,"/>
+<approved hash="103,2,129.54,-45.72,U$35,NC,N$30,,,"/>
+<approved hash="103,2,129.54,-48.26,U$36,NC,N$31,,,"/>
+<approved hash="104,1,63.5,-66.04,JP_LCD,VCC,+5V,,,"/>
+<approved hash="103,1,91.44,-81.28,U$37,NC,N$94,,,"/>
+<approved hash="103,1,91.44,-78.74,U$38,NC,N$95,,,"/>
+<approved hash="103,1,91.44,-76.2,U$39,NC,N$96,,,"/>
+<approved hash="103,1,63.5,-81.28,U$40,NC,N$97,,,"/>
+<approved hash="104,4,-53.34,-96.52,U621,VCC,+5V,,,"/>
+<approved hash="104,4,-53.34,-101.6,U621,VOUT,-5V,,,"/>
+<approved hash="104,2,220.98,-71.12,IC101,GND1,GND,,,"/>
+<approved hash="104,2,226.06,-71.12,IC101,GND2,GND,,,"/>
+<approved hash="104,2,231.14,-71.12,IC101,GND3,GND,,,"/>
+<approved hash="104,2,220.98,-7.62,IC101,VCCIO,+3V3,,,"/>
+<approved hash="104,2,215.9,-71.12,IC101,AGND,GND,,,"/>
+<approved hash="104,2,226.06,-7.62,IC101,VCC,+5V,,,"/>
+<approved hash="103,2,200.66,-35.56,U$13,NC,N$107,,,"/>
+<approved hash="103,2,200.66,-43.18,U$14,NC,N$109,,,"/>
+<approved hash="103,2,200.66,-53.34,U$15,NC,N$110,,,"/>
+<approved hash="103,2,200.66,-15.24,U$16,NC,N$111,,,"/>
+<approved hash="103,2,251.46,-63.5,U$41,NC,N$116,,,"/>
+<approved hash="103,2,129.54,-20.32,U$43,NC,N$112,,,"/>
+<approved hash="103,2,129.54,-22.86,U$44,NC,N$113,,,"/>
+<approved hash="103,2,99.06,-127,U$42,NC,N$65,,,"/>
+<approved hash="113,1,-74.9723,22.9912,JP_ADC,,,,,"/>
+<approved hash="113,2,-160.493,111.76,SJ100,,,,,"/>
+<approved hash="113,2,-120.566,-152.4,SJ_ADC_MODE,,,,,"/>
+<approved hash="113,2,-160.4,53.34,SJ110,,,,,"/>
+<approved hash="113,1,63.9298,-31.6188,JP_SPI,,,,,"/>
+<approved hash="113,2,-264.633,111.76,SJ101,,,,,"/>
+<approved hash="113,2,-264.446,53.34,SJ111,,,,,"/>
 <approved hash="116,2,137.16,15.23,J180,A_15,ADC2_D7,,,"/>
 </errors>
 </schematic>
