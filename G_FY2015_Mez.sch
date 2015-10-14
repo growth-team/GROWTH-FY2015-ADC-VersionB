@@ -678,70 +678,6 @@
 <text x="-2" y="1" size="1" layer="21">&gt;name</text>
 <wire x1="-1" y1="0.7" x2="-1" y2="-0.7" width="0.1" layer="21" curve="240"/>
 </package>
-<package name="TSSOP-28(4.4MM)(0.65MM)">
-<smd name="1" x="-4.225" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-4.8" y1="-3.05" x2="-3.65" y2="-2.5" layer="29" rot="R90"/>
-<smd name="2" x="-3.575" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-4.15" y1="-3.05" x2="-3" y2="-2.5" layer="29" rot="R90"/>
-<smd name="3" x="-2.925" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-3.5" y1="-3.05" x2="-2.35" y2="-2.5" layer="29" rot="R90"/>
-<smd name="4" x="-2.275" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-2.85" y1="-3.05" x2="-1.7" y2="-2.5" layer="29" rot="R90"/>
-<smd name="5" x="-1.625" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-2.2" y1="-3.05" x2="-1.05" y2="-2.5" layer="29" rot="R90"/>
-<smd name="6" x="-0.975" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-1.55" y1="-3.05" x2="-0.4" y2="-2.5" layer="29" rot="R90"/>
-<smd name="7" x="-0.325" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-0.9" y1="-3.05" x2="0.25" y2="-2.5" layer="29" rot="R90"/>
-<smd name="8" x="0.325" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-0.25" y1="-3.05" x2="0.9" y2="-2.5" layer="29" rot="R90"/>
-<smd name="9" x="0.975" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="0.4" y1="-3.05" x2="1.55" y2="-2.5" layer="29" rot="R90"/>
-<smd name="10" x="1.625" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="1.05" y1="-3.05" x2="2.2" y2="-2.5" layer="29" rot="R90"/>
-<smd name="11" x="2.275" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="1.7" y1="-3.05" x2="2.85" y2="-2.5" layer="29" rot="R90"/>
-<smd name="12" x="2.925" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="2.35" y1="-3.05" x2="3.5" y2="-2.5" layer="29" rot="R90"/>
-<smd name="13" x="3.575" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="3" y1="-3.05" x2="4.15" y2="-2.5" layer="29" rot="R90"/>
-<smd name="14" x="4.225" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="3.65" y1="-3.05" x2="4.8" y2="-2.5" layer="29" rot="R90"/>
-<smd name="15" x="4.225" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="3.65" y1="2.5" x2="4.8" y2="3.05" layer="29" rot="R90"/>
-<smd name="16" x="3.575" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="3" y1="2.5" x2="4.15" y2="3.05" layer="29" rot="R90"/>
-<smd name="17" x="2.925" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="2.35" y1="2.5" x2="3.5" y2="3.05" layer="29" rot="R90"/>
-<smd name="18" x="2.275" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="1.7" y1="2.5" x2="2.85" y2="3.05" layer="29" rot="R90"/>
-<smd name="19" x="1.625" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="1.05" y1="2.5" x2="2.2" y2="3.05" layer="29" rot="R90"/>
-<smd name="20" x="0.975" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="0.4" y1="2.5" x2="1.55" y2="3.05" layer="29" rot="R90"/>
-<smd name="21" x="0.325" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-0.25" y1="2.5" x2="0.9" y2="3.05" layer="29" rot="R90"/>
-<smd name="22" x="-0.325" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-0.9" y1="2.5" x2="0.25" y2="3.05" layer="29" rot="R90"/>
-<smd name="23" x="-0.975" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-1.55" y1="2.5" x2="-0.4" y2="3.05" layer="29" rot="R90"/>
-<smd name="24" x="-1.625" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-2.2" y1="2.5" x2="-1.05" y2="3.05" layer="29" rot="R90"/>
-<smd name="25" x="-2.275" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-2.85" y1="2.5" x2="-1.7" y2="3.05" layer="29" rot="R90"/>
-<smd name="26" x="-2.925" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-3.5" y1="2.5" x2="-2.35" y2="3.05" layer="29" rot="R90"/>
-<smd name="27" x="-3.575" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-4.15" y1="2.5" x2="-3" y2="3.05" layer="29" rot="R90"/>
-<smd name="28" x="-4.225" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90" stop="no"/>
-<rectangle x1="-4.8" y1="2.5" x2="-3.65" y2="3.05" layer="29" rot="R90"/>
-<wire x1="-4.8" y1="2.1875" x2="4.8" y2="2.1875" width="0.127" layer="21"/>
-<wire x1="4.8" y1="2.1875" x2="4.8" y2="-2.2125" width="0.127" layer="21"/>
-<wire x1="4.8" y1="-2.2125" x2="-4.8" y2="-2.2125" width="0.127" layer="21"/>
-<wire x1="-4.8" y1="-2.2125" x2="-4.8" y2="-0.9925" width="0.127" layer="21" curve="-240"/>
-<wire x1="-4.8" y1="-0.9925" x2="-4.8" y2="2.1875" width="0.127" layer="21"/>
-<text x="-6.78" y="-2.7525" size="1.27" layer="25" rot="R90">&gt;name</text>
-</package>
 <package name="P1-17">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
 <circle x="0" y="0" radius="0.8128" width="0.1524" layer="51"/>
@@ -1369,6 +1305,7 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <hole x="3.175" y="-2.159" drill="1.016"/>
 <hole x="3.175" y="2.159" drill="1.016"/>
 <rectangle x1="0" y1="-3.81" x2="9.144" y2="3.81" layer="39" rot="R180"/>
+<rectangle x1="-1" y1="-1.95" x2="1.75" y2="1.95" layer="29"/>
 </package>
 <package name="SOIC-8(150MIL)(1.27MM)">
 <description>package size : http://glacier.lbl.gov/gtp/DOM/dataSheets/soic8_dim.pdf
@@ -1838,34 +1775,34 @@ USB 2.0 chassis socket type A, upright version, for printed circuit boards.&lt;b
 <package name="TSSOP-28(4.4MM)(0.65MM)_LONGPAD">
 <description>TSSOP-28 4.4mm 0.65mm
 Longer solder pad</description>
-<smd name="1" x="-4.225" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="2" x="-3.575" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="3" x="-2.925" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="4" x="-2.275" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="5" x="-1.625" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="6" x="-0.975" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="7" x="-0.325" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="8" x="0.325" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="9" x="0.975" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="10" x="1.625" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="11" x="2.275" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="12" x="2.925" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="13" x="3.575" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="14" x="4.225" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="15" x="4.225" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="16" x="3.575" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="17" x="2.925" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="18" x="2.275" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="19" x="1.625" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="20" x="0.975" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="21" x="0.325" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="22" x="-0.325" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="23" x="-0.975" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="24" x="-1.625" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="25" x="-2.275" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="26" x="-2.925" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="27" x="-3.575" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
-<smd name="28" x="-4.225" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90" stop="no"/>
+<smd name="1" x="-4.225" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="2" x="-3.575" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="-2.925" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="-2.275" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="-1.625" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="-0.975" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="7" x="-0.325" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="8" x="0.325" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="9" x="0.975" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="10" x="1.625" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="11" x="2.275" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="12" x="2.925" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="13" x="3.575" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="14" x="4.225" y="-2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="15" x="4.225" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="16" x="3.575" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="17" x="2.925" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="18" x="2.275" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="19" x="1.625" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="20" x="0.975" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="21" x="0.325" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="22" x="-0.325" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="23" x="-0.975" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="24" x="-1.625" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="25" x="-2.275" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="26" x="-2.925" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="27" x="-3.575" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
+<smd name="28" x="-4.225" y="2.975" dx="1.4" dy="0.45" layer="1" rot="R90"/>
 <wire x1="-4.8" y1="2.1875" x2="4.8" y2="2.1875" width="0.127" layer="21"/>
 <wire x1="4.8" y1="2.1875" x2="4.8" y2="-2.2125" width="0.127" layer="21"/>
 <wire x1="4.8" y1="-2.2125" x2="-4.8" y2="-2.2125" width="0.127" layer="21"/>
@@ -2217,6 +2154,70 @@ Longer solder pad</description>
 <rectangle x1="-1.651" y1="-4.699" x2="-0.889" y2="-2.921" layer="51"/>
 <rectangle x1="0.889" y1="-4.699" x2="1.651" y2="-2.921" layer="51"/>
 <rectangle x1="0.889" y1="-5.461" x2="1.651" y2="-4.699" layer="21"/>
+</package>
+<package name="TSSOP-28(4.4MM)(0.65MM)">
+<smd name="1" x="-4.225" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-4.8" y1="-3.05" x2="-3.65" y2="-2.5" layer="29" rot="R90"/>
+<smd name="2" x="-3.575" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-4.15" y1="-3.05" x2="-3" y2="-2.5" layer="29" rot="R90"/>
+<smd name="3" x="-2.925" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-3.5" y1="-3.05" x2="-2.35" y2="-2.5" layer="29" rot="R90"/>
+<smd name="4" x="-2.275" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-2.85" y1="-3.05" x2="-1.7" y2="-2.5" layer="29" rot="R90"/>
+<smd name="5" x="-1.625" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-2.2" y1="-3.05" x2="-1.05" y2="-2.5" layer="29" rot="R90"/>
+<smd name="6" x="-0.975" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-1.55" y1="-3.05" x2="-0.4" y2="-2.5" layer="29" rot="R90"/>
+<smd name="7" x="-0.325" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-0.9" y1="-3.05" x2="0.25" y2="-2.5" layer="29" rot="R90"/>
+<smd name="8" x="0.325" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-0.25" y1="-3.05" x2="0.9" y2="-2.5" layer="29" rot="R90"/>
+<smd name="9" x="0.975" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="0.4" y1="-3.05" x2="1.55" y2="-2.5" layer="29" rot="R90"/>
+<smd name="10" x="1.625" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="1.05" y1="-3.05" x2="2.2" y2="-2.5" layer="29" rot="R90"/>
+<smd name="11" x="2.275" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="1.7" y1="-3.05" x2="2.85" y2="-2.5" layer="29" rot="R90"/>
+<smd name="12" x="2.925" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="2.35" y1="-3.05" x2="3.5" y2="-2.5" layer="29" rot="R90"/>
+<smd name="13" x="3.575" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="3" y1="-3.05" x2="4.15" y2="-2.5" layer="29" rot="R90"/>
+<smd name="14" x="4.225" y="-2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="3.65" y1="-3.05" x2="4.8" y2="-2.5" layer="29" rot="R90"/>
+<smd name="15" x="4.225" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="3.65" y1="2.5" x2="4.8" y2="3.05" layer="29" rot="R90"/>
+<smd name="16" x="3.575" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="3" y1="2.5" x2="4.15" y2="3.05" layer="29" rot="R90"/>
+<smd name="17" x="2.925" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="2.35" y1="2.5" x2="3.5" y2="3.05" layer="29" rot="R90"/>
+<smd name="18" x="2.275" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="1.7" y1="2.5" x2="2.85" y2="3.05" layer="29" rot="R90"/>
+<smd name="19" x="1.625" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="1.05" y1="2.5" x2="2.2" y2="3.05" layer="29" rot="R90"/>
+<smd name="20" x="0.975" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="0.4" y1="2.5" x2="1.55" y2="3.05" layer="29" rot="R90"/>
+<smd name="21" x="0.325" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-0.25" y1="2.5" x2="0.9" y2="3.05" layer="29" rot="R90"/>
+<smd name="22" x="-0.325" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-0.9" y1="2.5" x2="0.25" y2="3.05" layer="29" rot="R90"/>
+<smd name="23" x="-0.975" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-1.55" y1="2.5" x2="-0.4" y2="3.05" layer="29" rot="R90"/>
+<smd name="24" x="-1.625" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-2.2" y1="2.5" x2="-1.05" y2="3.05" layer="29" rot="R90"/>
+<smd name="25" x="-2.275" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-2.85" y1="2.5" x2="-1.7" y2="3.05" layer="29" rot="R90"/>
+<smd name="26" x="-2.925" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-3.5" y1="2.5" x2="-2.35" y2="3.05" layer="29" rot="R90"/>
+<smd name="27" x="-3.575" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-4.15" y1="2.5" x2="-3" y2="3.05" layer="29" rot="R90"/>
+<smd name="28" x="-4.225" y="2.775" dx="1.05" dy="0.45" layer="1" rot="R90"/>
+<rectangle x1="-4.8" y1="2.5" x2="-3.65" y2="3.05" layer="29" rot="R90"/>
+<wire x1="-4.8" y1="2.1875" x2="4.8" y2="2.1875" width="0.127" layer="21"/>
+<wire x1="4.8" y1="2.1875" x2="4.8" y2="-2.2125" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-2.2125" x2="-4.8" y2="-2.2125" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-2.2125" x2="-4.8" y2="-0.9925" width="0.127" layer="21" curve="-240"/>
+<wire x1="-4.8" y1="-0.9925" x2="-4.8" y2="2.1875" width="0.127" layer="21"/>
+<text x="-6.78" y="-2.7525" size="1.27" layer="25" rot="R90">&gt;name</text>
 </package>
 </packages>
 <symbols>
@@ -3304,7 +3305,7 @@ Datasheet: &lt;a href="http://docs-asia.electrocomponents.com/webdocs/0713/09007
 </device>
 </devices>
 </deviceset>
-<deviceset name="C2012" prefix="C">
+<deviceset name="C2012" prefix="C" uservalue="yes">
 <description>SMD Capacitor 2012 (0805)</description>
 <gates>
 <gate name="G$1" symbol="C" x="0" y="0"/>
@@ -3321,7 +3322,7 @@ Datasheet: &lt;a href="http://docs-asia.electrocomponents.com/webdocs/0713/09007
 </device>
 </devices>
 </deviceset>
-<deviceset name="C1608" prefix="C">
+<deviceset name="C1608" prefix="C" uservalue="yes">
 <description>SMC Capacitor 1608 (0603)</description>
 <gates>
 <gate name="G$1" symbol="C" x="0" y="0"/>
@@ -11797,6 +11798,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="power" width="0.254" drill="0">
+<clearance class="1" value="0.1778"/>
+</class>
 </classes>
 <parts>
 <part name="U300" library="Aardvark" deviceset="OPTON_1PA_12" device=""/>
@@ -12497,7 +12501,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-55.88" y1="78.74" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U410" gate="P" pin="DGND"/>
 <pinref part="GND29" gate="1" pin="GND"/>
@@ -12629,7 +12633,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="GND45" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <pinref part="U411" gate="G$1" pin="VIN"/>
 <wire x1="-83.82" y1="73.66" x2="-91.44" y2="73.66" width="0.1524" layer="91"/>
@@ -12661,7 +12665,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="U$10" gate="G$1" pin="NC"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <pinref part="U410" gate="P" pin="V_DD"/>
 <wire x1="-91.44" y1="48.26" x2="-96.52" y2="48.26" width="0.1524" layer="91"/>
@@ -13460,7 +13464,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="137.16" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U100" gate="G$1" pin="DGND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -13911,7 +13915,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="-15.24" y1="104.14" x2="-2.54" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <pinref part="U100" gate="G$1" pin="DRVDD"/>
@@ -14648,7 +14652,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <junction x="129.54" y="-114.3"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <pinref part="IC100" gate="1" pin="VCC"/>
 <wire x1="55.88" y1="-15.24" x2="63.5" y2="-15.24" width="0.1524" layer="91"/>
@@ -15754,7 +15758,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="N$1" class="1">
 <segment>
 <pinref part="U300" gate="G$1" pin="HV_OUT"/>
 <wire x1="124.46" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
@@ -15763,7 +15767,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="132.08" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="N$4" class="1">
 <segment>
 <pinref part="U301" gate="G$1" pin="HV_OUT"/>
 <wire x1="124.46" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
@@ -15772,7 +15776,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="132.08" y1="66.04" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U300" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -15886,7 +15890,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="48.26" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="HV_PWR_12V" class="0">
+<net name="HV_PWR_12V" class="1">
 <segment>
 <wire x1="68.58" y1="99.06" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U300" gate="G$1" pin="VIN"/>
@@ -15919,7 +15923,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <junction x="88.9" y="20.32"/>
 </segment>
 </net>
-<net name="+12V" class="0">
+<net name="+12V" class="1">
 <segment>
 <pinref part="R300" gate="R" pin="2"/>
 <pinref part="P+4" gate="1" pin="+12V"/>
@@ -16077,7 +16081,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <busses>
 </busses>
 <nets>
-<net name="+5V" class="0">
+<net name="+5V" class="1">
 <segment>
 <pinref part="R500" gate="G$1" pin="P$1"/>
 <wire x1="53.34" y1="38.1" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
@@ -16147,7 +16151,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <pinref part="P+17" gate="1" pin="+5V"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="35.56" y1="35.56" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
@@ -16345,7 +16349,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <label x="109.22" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V_BEFORE_SENSE" class="0">
+<net name="+5V_BEFORE_SENSE" class="1">
 <segment>
 <pinref part="R500" gate="G$1" pin="P$2"/>
 <wire x1="53.34" y1="66.04" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
@@ -16369,7 +16373,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <pinref part="U510" gate="A" pin="-"/>
 </segment>
 </net>
-<net name="+3V3_BEFORE_SENSE" class="0">
+<net name="+3V3_BEFORE_SENSE" class="1">
 <segment>
 <pinref part="R510" gate="G$1" pin="P$2"/>
 <wire x1="53.34" y1="22.86" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
@@ -16397,7 +16401,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <label x="109.22" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="1">
 <segment>
 <pinref part="R510" gate="G$1" pin="P$1"/>
 <wire x1="53.34" y1="-5.08" x2="53.34" y2="-10.16" width="0.1524" layer="91"/>
@@ -16422,7 +16426,7 @@ differential spanは2V (±1V)で、Vref=1Vとなる。</text>
 <wire x1="-43.18" y1="50.8" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+12V" class="0">
+<net name="+12V" class="1">
 <segment>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <pinref part="C600" gate="G$1" pin="+"/>
